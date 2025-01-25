@@ -1,0 +1,249 @@
+\documentclass[12pt,a4paper]{style}
+
+%%%%%%%%% Preamble
+
+% used for figures:
+\usepackage{graphicx}
+% math fonts etc.:
+\usepackage{amsmath,amsfonts,amsthm,latexsym,amssymb}
+\usepackage{pdfpages}
+\usepackage{caption,subcaption}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=blue,
+	urlcolor=black
+}
+\usepackage{wrapfig}
+\setlength\intextsep{2pt} % avoid too much space around figure (can be set to 0pt at maximum)
+
+\graphicspath{ {figures/} }
+%%%%%%%%%%
+
+\begin{document}
+	\tableofcontents
+	\listoffigures
+	\newpage
+	\begin{center}
+			\textcolor{orange}{\Large {\bf{Inferential Statistics Project}}}
+	\end{center}
+	
+	\section{Foot injury and player position}
+A physiotherapist working with a male football team is interested in studying the relationship between foot injuries and the positions played by the athletes. Using the data collected in Table \ref{table1}, the physiotherapist aims to analyze whether certain positions on the field are more prone to foot injuries than others. By understanding these patterns, the physiotherapist may be able to develop targeted prevention strategies, enhance player safety, and optimize the team's overall performance.	
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|cccc|c|}
+			\hline
+			& Striker     & Forward     & Attacking Midfielder & Winger      & \textbf{Total} \\ \hline
+			Players Injured     & 45          & 56          & 24                   & 20          & \textbf{145}   \\
+			Players Not Injured & 32          & 38          & 11                   & 9           & \textbf{90}   \\
+			\hline
+			\textbf{Total}      & \textbf{77} & \textbf{94} & \textbf{35}          & \textbf{29} & \textbf{235}\\
+			\hline  
+		\end{tabular}
+		\caption{Physiotherapist's injury Data.}
+		\label{table1}
+	\end{table}
+	
+	\subsection{What is the probability that a randomly chosen player would suffer an injury?} We observe that out of 235 players 145 suffered an injury. So, there is  61.7\% chance that a randomly chosen player would suffer an injury.
+	\subsection{What is the probability that a player is a forward or a winger?}
+	There are 94 players playing forward and 29 at the winger. So out of 235 players 123 are at the forward or winger. The probability of randomly chosen player being a forward or winger is 52.3\%.  
+	\subsection{What is the probability that a randomly chosen player plays in a striker position and has a foot injury?}
+	There are 45 strikers who have suffered a foot injury. The probability that a randomly chosen player plays in a striker position and has a foot injury is 19.14\%.
+	\subsection{What is the probability that a randomly chosen injured player is a striker?}
+	From the player injured row in table \ref{table1} we observe that out of 145 injured players 45 played at striker position. So, the probability that a randomly chosen injured player is a striker is 31\%.
+	
+	\section{Breaking strength of cement packaging gunny bags}
+The breaking strength of gunny bags used for packaging cement follows a normal distribution, with a mean of 5 kg per square centimeter and a standard deviation of 1.5 kg per square centimeter. To better understand potential wastage or pilferage within the supply chain, the quality team of the cement company is seeking answers to several key questions regarding the packaging material. They want to determine the percentage of gunny bags that have a breaking strength below certain critical thresholds, which could indicate a higher risk of breakage during handling or transport. Additionally, the team is interested in knowing the probability that a randomly selected bag exceeds a specific breaking strength, helping them gauge the robustness of their packaging. By analyzing these aspects, the quality team can make more informed decisions to minimize risks and optimize the supply chain's efficiency. 	
+	\subsection{What proportion of the gunny bags have a breaking strength of less than 3.17 kg per sq cm?}
+	11.12\% of Gunny bags used for cement packaging have breaking strength less than 3.17. Such bags may pose risk to cement wastage. As shown in Figure \ref{fig:2.1}, the shaded portion shows the part of normal distribution which have breaking strength less than 3.17 which is basically the area under the distribution up to 3.17(cumulative distribution function).  
+	\subsection{What proportion of the gunny bags have a breaking strength of at least 3.6 kg per sq cm.}
+	82.47 \% of Gunny bags have at least a breaking strength of 3.6. The shaded region in Figure \ref{fig:2.2} represents gunny bags having breaking strength greater than 3.6. 
+	\begin{figure}[h]
+		\centering
+		\begin{subfigure}[t]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{2_1.png}
+			\caption{The shaded region denotes the proportion  of gunny bags which have breaking strength less than 3.17}
+			\label{fig:2.1}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[t]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{2_2.png}
+			\caption{The shaded region denotes the proportion of gunny bags which have breaking strength greater than 3.6.}
+			\label{fig:2.2}
+		\end{subfigure}
+		\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{2_3.png}
+		\caption{The shaded region denotes the proportion of gunny bags which have breaking strength in between 5 and 5.5 }
+		\label{fig:2.3}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{2_4.png}
+		\caption{The shaded region denotes the proportion of gunny bags which don't have breaking strength in between 3 and 7.5}
+		\label{fig:2.4}
+	\end{subfigure}
+	\caption{Gunny bag breaking strength distribution. }
+	\label{fig : 1}
+	\end{figure}	
+	\subsection{What proportion of the gunny bags have a breaking strength between 5 and 5.5 kg per sq cm.?} 13 \% of Gunny bags have a breaking strength between 5 and 5.5. The shaded strip in Figure \ref{fig:2.3} depicts the same. We calculated this value by subtracting cumulative distribution function of 5 from 5.5. 
+	\subsection{What proportion of the gunny bags have a breaking strength NOT between 3 and 7.5 kg per sq cm.?}
+	Around 13.9 \% of gunny bags have a breaking strength not in between 3 and 7.5. The shaded region at two tails of the distribution in Figure \ref{fig:2.4} depicts the same.
+	
+	\section{Zingaro stone printing company}Zingaro Stone Printing is a company specializing in printing images or patterns on both polished and unpolished stones. For optimal printing quality, the stone surface must have a Brinell hardness index of at least 150. Recently, Zingaro received a new batch of polished and unpolished stones from its clients. The company needs to assess these stones to ensure they meet the required hardness standard, ensuring the prints are of the good quality.
+	
+	The data set provided to us has two columns representing Unpolished and polished stones brinell hardness record. We have total 75 records for each and we did not find any missing or irregular values in the data set. The unpolished stones have a sample mean of 134 with standard deviation of 33 and the polished stones have a sample mean of around 148 with standard deviation of 15. To address the following business questions we will carry out hypothesis testing to get inference from the sample data on the population of manufactured stones. 
+	\subsection{Zingaro has reason to believe that the unpolished stones may not be suitable for printing. Is Zingaro justified in thinking so?}
+	To answer this question we set up following hypothesis testing.
+	\begin{itemize}
+		\item Null Hypothesis $H_0$: Mean hardness level of Unpolished stones is 150. $\mu$ $\leq$150. 
+		\item Alternate Hypothesis - $H_a$ : $\mu$ $>$ 150 
+		
+	We observe in the Figure \ref{fig:stones-dist} that hardness distribution of the sample is close to normal. We assume that population distribution is normal. Hardness index is a continuous variable and we do not know the population standard deviation. We therefore carry out one sample t-test for population mean. The p value was found to be 0.999 which is much higher than significance level 0.05. We therefore do not have enough significance to reject the null hypothesis and conclude that mean hardness index of Unpolished stones is less than 150. We can also observe this in the sample distribution plot in Figure \ref{fig:stones-box} box plot. 75\% of Unpolished stones have hardness level below 160 and median value is below 140. Zingaro company is justified ih their thought and should take action to improve the hardness index of unpolished stones.    
+	\end{itemize}
+	\begin{figure}
+		\centering
+		\begin{subfigure}[t]{0.55\textwidth}
+			\includegraphics[width=\textwidth]{stone_hardness_distribution.png}
+			\caption{}
+			\label{fig:stones-dist}
+		\end{subfigure}
+		\begin{subfigure}[t]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{stone_hardness.png}
+			\caption{}
+			\label{fig:stones-box}
+		\end{subfigure}
+		\caption{Brinell Hardness distribution in the stone sample.}
+		\label{fig:Zingaro-stones}
+	\end{figure}
+	
+	\subsection{Is the mean hardness of the polished and unpolished stones the same?}
+	Before setting up a hypothesis testing we can observe from Figure \ref{fig:stones-box} that box plot for Treated and polished stones is positioned a higher on y-axis than box plot for unpolished stones. Graphically we already have a hint that means are not equal. For statistical testing we employed the following null hypothesis. 
+	\begin{itemize}
+		\item Null Hypothesis $H_0$ : means of hardness are equal for the polished and unpolished stones. $\mu_{polished}$ = $\mu_{unpolished}$.
+		\item Alternate Hypothesis $H_a$ : $\mu_{polished}$ $>$ $\mu_{unpolished}$.
+	\end{itemize}
+	As the sample standard deviations are different, the population standard deviations may be assumed to be different. The data is continuous and we assume that the populations are normally distributed. We therefore could use two sample T-test for the population mean comparison.  
+	The p value from the test statistics is found to be 0.0007 which is much less than level of significance 0.05. We therefore have enough evidence to reject the null hypothesis and conclude that means of hardness are not equal for the polished and unpolished stones. The polished stones have better hardness quality. 
+	\section{Dental Implants}
+	
+	\begin{wrapfigure}{R}{0.35\textwidth}
+		\vspace{-1mm} % move picture up
+		\includegraphics[width=0.35\textwidth]{dentist_dataset.png}
+		\vspace{-4mm} % spacing between figure and caption
+		\caption{Dental implants data set.}
+		\label{fig:dataset}
+	\end{wrapfigure}
+	The hardness of metal implants in dental cavities depends on multiple factors, including the method of implantation, the temperature at which the metal is treated, and the specific alloy used. Additionally, the preferences and expertise of dentists, who may favor and excel in particular methods, play a significant role. The variable of interest in this context is the response, which refers to the hardness of the metal implants. Understanding how these factors interact can help in optimizing implant procedures and improving patient outcomes.
+	Figure \ref{fig:dataset} show a glimpse of data set used for the statistical analysis. We have four categorical columns Dentist, Method, Alloy and Temp which will be treated as factors/level/treatment variables. The Response column is the outcome or dependent variable. During data cleaning we did not find any null or missing values. We have five Dentist category 1 to 5. Two types of alloys and three types of methods. There are three temperatures settings. 
+	
+	\subsection{How does the hardness of implants vary depending on dentists?}
+		\begin{wrapfigure}{R}{0.6\textwidth}
+		\vspace{-1mm} % move picture up
+		\includegraphics[width=0.6\textwidth]{4_1.png}
+		\vspace{-6mm} % spacing between figure and caption
+		\caption{Response distribution across dentist performing the implant.}
+		\label{fig:4.1}
+	\end{wrapfigure}
+	We are interested in effective hardness of implants with respect to different dentist. For this we have put box plots of Response variable with respect to dentist for two alloys in Figure \ref{fig:4.1}. We observe that dentist 5 has higher variability in hardness of implants than other dentists. We are interested in figuring out whether the differences in mean hardness level for different dentist is because of intra-variance or the differences between them. So we need to carry out a statistical test if the mean levels of all these dentist are equal. We can therefore invoke the one way ANOVA F-test here which does the exact task. We do the analysis for both types of Alloy. We did the Shapiro-Wilk's test to check normality condition and Levene test to check equality of variance on the response variable. For both alloys Normality condition is found to be not valid and equality of variance condition is found to be valid. So the homogenity of variance assumpton is verified using Levene's test. Even though Shapiro-Wilk's test is failed we will assume that normality assumption holds and go forward with the test. The hypothesis being set up is as follows:
+	\begin{itemize}
+		\item Null Hypothesis $H_0$ : means of hardness level in dental implants are equal across the dentist from 1 to 5.
+		\item Alternate Hypothesis $H_a$ : At least one mean value is different for some dentist among 1 to 5.
+	\end{itemize}   
+		For alloy 1 we found the p-value to be 0.116 and for alloy 2 it is found to be 0.718. So in both the cases we do not have enough statistical evidence to reject null hypothesis with respect to 	significance level of 5\%. We conclude that mean hardness level is same for all the dentist in both the alloys. We can intuitively see it from the figure \ref{fig:4.1} that all the box plots are more or less on the same level. So, speaking on average it does not matter which dentist performs the dental implant. Nevertheless it is important to note that dentist 5 has higher spread than others and there are outliers in the box plots. 
+
+	\subsection{How does the hardness of implants vary depending on methods?}
+	We have put a box plot on Figure \ref{fig:4.2} of Response variable with respect to method used for implants for both alloy 1 and 2. We observe that Method 1 and Method 2's box plot are on similar level where as Method 3 seems to differ and is distinctively below. So graphically we have a hint that method used for dental implant has effect on hardness. Method 1 and 2 seem to provide better hardness result than method 3 in both alloys. We need to carry out statistical test to compare the mean levels across different method used. We performed one way ANOVA F-test. We do te analysis for both types of alloy separately. We did the Shapiro-Wilk's test to check normality condition and Levene test to check equality of variance on the response variable. For both the alloys these assumption test failed. But owing to the importance of ANOVA test we proceed to carry out the test on sample data. The hypothesis being set up is as follows:      
+		\begin{itemize}
+		\item Null Hypothesis $H_0$ : means of hardness level in dental implants are equal across the methods from 1 to 3.
+		\item Alternate Hypothesis $H_a$ : At least one mean value is different for some method among 1 to 3.
+	\end{itemize}
+	The p value from one way F-test is found to be very small compared to significance level of 5\% in both alloy types. We therefore in both the cases reject the null hypothesis and conclude that means of hardness level is not same across the method used for implants. To find out which one differ we carried out multiple pairwise comparison test (Turkey HSD). We found that mean for method 3 is different from 1 and 2 in both types of alloys. This agrees with our graphical observation in figure \ref{fig:4.2}. The results from Turkey HSD are shown in Figure \ref{fig:hsd} in both alloys.
+	\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{4_2.png}
+	\caption{Response distribution across method used for implants.}
+	\label{fig:4.2}
+	\end{figure}	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[t]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{HSD_alloy1}
+			\caption{test result for alloy 1}
+			\label{fig:hsd-alloy1}
+		\end{subfigure}
+		\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{HSD_alloy2.png}
+			\caption{test result for alloy 2}
+			\label{fig:hsd-alloy2}
+		\end{subfigure}
+		\caption{Multiple comparison test(Turkey HSD) result}
+		\label{fig:hsd}
+	\end{figure}
+	\subsection{ What is the interaction effect between the dentist and method on the hardness of dental implants for each type of alloy?}
+		We have put an interaction plot on Response variable between method and dentist in Figure \ref{fig:interaction-plot}. On the x axis we have three methods and different colored curve is plotted for all the dentist from 1 to 5. Each point represent mean of the sample corresponding to the method and dentist combination. The error bars are omitted for better visibility. We have done the analysis separately for alloy 1 and 2. In the previous question we had discovered that method 3 has lower hardness result compared to other methods. this is also reflected in this interaction plot. For most dentist combination the mean hardness level for method 3 has lower response value. If higher hardness level is desired then dentists not performing well in method 3 should consider their options more towards method 1 and 2. \\
+		\textbf{Alloy 1 :}
+		\begin{itemize}
+			\item Dentist 4 and 5 have similar performance. Both of them have distinctively low response level for method 3.
+			\item The variation across methods for dentist 1,2 and 3 is relatively less. 
+			\item dentist 1 and 2 performs method 1 better. Dentist 1,2 and 3 perform method 3 very similarly. 
+		\end{itemize} 
+		\textbf{Alloy 2:}
+		\begin{itemize}
+			\item Alloy 2 has a little bit different story than Alloy 1.
+			\item Here for method 3 all the dentist have lower hardness result. Alloy 2 does not seem very conducive for method 3 across all the dentist. 
+			\item Method 2 is best performed by dentist 1. Dentist 5 have good response on method 1 and 2 but very low on method 3. Dentist 5 should prefer method 1 and 2.
+			\item In both alloys dentist 3(green) has least variability across three methods.
+		\end{itemize}
+		\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{interaction_plot.png}
+		\caption{Interaction plot on Response variable between method and dentist for alloy 1(left) and 2(right).}
+		\label{fig:interaction-plot}
+	\end{figure}
+	\subsection{How does the hardness of implants vary depending on dentists and methods together?}
+	For addressing this question we will use two-way ANOVA test. It is used to examine the interaction effect between two independent variables (factors) on a single dependent variable. Here we have two factors Method and Dentist. The dependent variable is Hardness level i.e Response. The following are the hypothesis design for the test.
+	\begin{itemize}
+		\item Hypothesis for main effect of Method factor
+		\begin{itemize}
+			\item Null Hypothesis $H_0$ : Method used for implant doe not have any effect on Response level. 
+			\item Alternate $H_a$ : Method used for implant does have effect on Response level.
+		\end{itemize}
+	\item Hypothesis for main effect of Dentist factor
+		\begin{itemize}
+		\item Null Hypothesis $H_0$ : Different dentist get same result on Response level.
+		\item Alternate $H_a$ : Different dentist get variable result on Response level.
+		\end{itemize}
+	\item Hypothesis for interaction effect
+	\begin{itemize}
+			\item Null Hypothesis $H_0$ : There is no interaction between Method and Dentist on Response level.
+		\item Alternate $H_a$ : There is an interaction between Method and Dentist on Response level.
+	\end{itemize}
+	\end{itemize}
+	\begin{figure}[h]
+	\centering
+	\begin{subfigure}[t]{0.8\textwidth}
+		\includegraphics[width=\textwidth]{two_anova_alloy1.png}
+		\caption{two way ANOVA test result for alloy 1}
+		\label{fig:two-way-alloy1}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.8\textwidth}
+		\includegraphics[width=\textwidth]{two_anova_alloy2.png}
+		\caption{two way ANOVA test result for alloy 2}
+		\label{figtwo-way-alloy2}
+	\end{subfigure}
+	\caption{Test result of two-way ANOVA}
+	\label{fig:two-way-anova}
+	\end{figure}
+	
+		Figure \ref{fig:two-way-anova} shows the test result table for two way ANOVA on both typre of alloys. The last column indicates the p-value for the test statistics. We see that p value is 0.0114 and  0.3718 for Dentist factor in alloy 1 and 2 respectively. Which is larger than our accepted significance level of 5\%. We therefore fail to reject the null hypothesis for Dentist factor. Therefore, on average different dentist get same result on hardness level. The p value for Method factor in alloy 1 is 0.0002 which very small compared to significance level. In this case null hypothesis is rejected and we conclude that method of implant has efect on hardness level in alloy 1.	Similarly, The p value for Method factor in alloy 2 is close to zero, null hypothesis is rejected and we conclude that method of implant has significant effect on hardness level in alloy 2. For the interaction between Method and Dentist factor, we find p value to be 0.0067. We have enough statistical evidence for the null hypothesis for interaction effect in alloy1 to be rejected. With respect to significance level of 5\% we conclude that there is interaction between method and dentist on response variable. We also observed this qualitatively in previous question where we discussed the interaction plot in Figure \ref{fig:interaction-plot}. In case of alloy 2 the p value for interaction term is 0.093. Although we do not reject null hypothesis here with respect to significance level of 5\%, we can conclude that there is 90.7\% chance of interaction effect to be true. So interaction between method and dentist factor in alloy 2 can not be ignored. 	
+		
+\centering
+\vspace{20pt}
+\subsection*{End of Report\\Submitted by : Haraprasad Dhal}
+\end{document}

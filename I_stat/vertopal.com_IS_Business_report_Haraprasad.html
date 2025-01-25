@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>b69995b9b6e44ee58db90dfe83a1163c</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="center">
+<p><span style="color: orange"><span><strong><span>Inferential
+Statistics Project</span></strong></span></span></p>
+</div>
+<h1 id="foot-injury-and-player-position">Foot injury and player
+position</h1>
+<p>A physiotherapist working with a male football team is interested in
+studying the relationship between foot injuries and the positions played
+by the athletes. Using the data collected in Table <a href="#table1"
+data-reference-type="ref" data-reference="table1">1</a>, the
+physiotherapist aims to analyze whether certain positions on the field
+are more prone to foot injuries than others. By understanding these
+patterns, the physiotherapist may be able to develop targeted prevention
+strategies, enhance player safety, and optimize the team’s overall
+performance.</p>
+<div id="table1">
+<table>
+<caption>Physiotherapist’s injury Data.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;">Striker</th>
+<th style="text-align: center;">Forward</th>
+<th style="text-align: center;">Attacking Midfielder</th>
+<th style="text-align: center;">Winger</th>
+<th style="text-align: center;"><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Players Injured</td>
+<td style="text-align: center;">45</td>
+<td style="text-align: center;">56</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;"><strong>145</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Players Not Injured</td>
+<td style="text-align: center;">32</td>
+<td style="text-align: center;">38</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;"><strong>90</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>77</strong></td>
+<td style="text-align: center;"><strong>94</strong></td>
+<td style="text-align: center;"><strong>35</strong></td>
+<td style="text-align: center;"><strong>29</strong></td>
+<td style="text-align: center;"><strong>235</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2
+id="what-is-the-probability-that-a-randomly-chosen-player-would-suffer-an-injury">What
+is the probability that a randomly chosen player would suffer an
+injury?</h2>
+<p>We observe that out of 235 players 145 suffered an injury. So, there
+is 61.7% chance that a randomly chosen player would suffer an
+injury.</p>
+<h2
+id="what-is-the-probability-that-a-player-is-a-forward-or-a-winger">What
+is the probability that a player is a forward or a winger?</h2>
+<p>There are 94 players playing forward and 29 at the winger. So out of
+235 players 123 are at the forward or winger. The probability of
+randomly chosen player being a forward or winger is 52.3%.</p>
+<h2
+id="what-is-the-probability-that-a-randomly-chosen-player-plays-in-a-striker-position-and-has-a-foot-injury">What
+is the probability that a randomly chosen player plays in a striker
+position and has a foot injury?</h2>
+<p>There are 45 strikers who have suffered a foot injury. The
+probability that a randomly chosen player plays in a striker position
+and has a foot injury is 19.14%.</p>
+<h2
+id="what-is-the-probability-that-a-randomly-chosen-injured-player-is-a-striker">What
+is the probability that a randomly chosen injured player is a
+striker?</h2>
+<p>From the player injured row in table <a href="#table1"
+data-reference-type="ref" data-reference="table1">1</a> we observe that
+out of 145 injured players 45 played at striker position. So, the
+probability that a randomly chosen injured player is a striker is
+31%.</p>
+<h1 id="breaking-strength-of-cement-packaging-gunny-bags">Breaking
+strength of cement packaging gunny bags</h1>
+<p>The breaking strength of gunny bags used for packaging cement follows
+a normal distribution, with a mean of 5 kg per square centimeter and a
+standard deviation of 1.5 kg per square centimeter. To better understand
+potential wastage or pilferage within the supply chain, the quality team
+of the cement company is seeking answers to several key questions
+regarding the packaging material. They want to determine the percentage
+of gunny bags that have a breaking strength below certain critical
+thresholds, which could indicate a higher risk of breakage during
+handling or transport. Additionally, the team is interested in knowing
+the probability that a randomly selected bag exceeds a specific breaking
+strength, helping them gauge the robustness of their packaging. By
+analyzing these aspects, the quality team can make more informed
+decisions to minimize risks and optimize the supply chain’s
+efficiency.</p>
+<h2
+id="what-proportion-of-the-gunny-bags-have-a-breaking-strength-of-less-than-3.17-kg-per-sq-cm">What
+proportion of the gunny bags have a breaking strength of less than 3.17
+kg per sq cm?</h2>
+<p>11.12% of Gunny bags used for cement packaging have breaking strength
+less than 3.17. Such bags may pose risk to cement wastage. As shown in
+Figure <a href="#fig:2.1" data-reference-type="ref"
+data-reference="fig:2.1">1</a>, the shaded portion shows the part of
+normal distribution which have breaking strength less than 3.17 which is
+basically the area under the distribution up to 3.17(cumulative
+distribution function).</p>
+<h2
+id="what-proportion-of-the-gunny-bags-have-a-breaking-strength-of-at-least-3.6-kg-per-sq-cm.">What
+proportion of the gunny bags have a breaking strength of at least 3.6 kg
+per sq cm.</h2>
+<p>82.47 % of Gunny bags have at least a breaking strength of 3.6. The
+shaded region in Figure <a href="#fig:2.2" data-reference-type="ref"
+data-reference="fig:2.2">2</a> represents gunny bags having breaking
+strength greater than 3.6.</p>
+<figure>
+<img src="2_1.png" id="fig:2.1"
+alt="The shaded region denotes the proportion of gunny bags which have breaking strength less than 3.17" />
+<figcaption aria-hidden="true">The shaded region denotes the proportion
+of gunny bags which have breaking strength less than 3.17</figcaption>
+</figure>
+<figure>
+<img src="2_2.png" id="fig:2.2"
+alt="The shaded region denotes the proportion of gunny bags which have breaking strength greater than 3.6." />
+<figcaption aria-hidden="true">The shaded region denotes the proportion
+of gunny bags which have breaking strength greater than
+3.6.</figcaption>
+</figure>
+<figure>
+<img src="2_3.png" id="fig:2.3"
+alt="The shaded region denotes the proportion of gunny bags which have breaking strength in between 5 and 5.5 " />
+<figcaption aria-hidden="true">The shaded region denotes the proportion
+of gunny bags which have breaking strength in between 5 and 5.5
+</figcaption>
+</figure>
+<figure>
+<img src="2_4.png" id="fig:2.4"
+alt="The shaded region denotes the proportion of gunny bags which don’t have breaking strength in between 3 and 7.5" />
+<figcaption aria-hidden="true">The shaded region denotes the proportion
+of gunny bags which don’t have breaking strength in between 3 and
+7.5</figcaption>
+</figure>
+<h2
+id="what-proportion-of-the-gunny-bags-have-a-breaking-strength-between-5-and-5.5-kg-per-sq-cm.">What
+proportion of the gunny bags have a breaking strength between 5 and 5.5
+kg per sq cm.?</h2>
+<p>13 % of Gunny bags have a breaking strength between 5 and 5.5. The
+shaded strip in Figure <a href="#fig:2.3" data-reference-type="ref"
+data-reference="fig:2.3">3</a> depicts the same. We calculated this
+value by subtracting cumulative distribution function of 5 from 5.5.</p>
+<h2
+id="what-proportion-of-the-gunny-bags-have-a-breaking-strength-not-between-3-and-7.5-kg-per-sq-cm.">What
+proportion of the gunny bags have a breaking strength NOT between 3 and
+7.5 kg per sq cm.?</h2>
+<p>Around 13.9 % of gunny bags have a breaking strength not in between 3
+and 7.5. The shaded region at two tails of the distribution in Figure <a
+href="#fig:2.4" data-reference-type="ref" data-reference="fig:2.4">4</a>
+depicts the same.</p>
+<h1 id="zingaro-stone-printing-company">Zingaro stone printing
+company</h1>
+<p>Zingaro Stone Printing is a company specializing in printing images
+or patterns on both polished and unpolished stones. For optimal printing
+quality, the stone surface must have a Brinell hardness index of at
+least 150. Recently, Zingaro received a new batch of polished and
+unpolished stones from its clients. The company needs to assess these
+stones to ensure they meet the required hardness standard, ensuring the
+prints are of the good quality.</p>
+<p>The data set provided to us has two columns representing Unpolished
+and polished stones brinell hardness record. We have total 75 records
+for each and we did not find any missing or irregular values in the data
+set. The unpolished stones have a sample mean of 134 with standard
+deviation of 33 and the polished stones have a sample mean of around 148
+with standard deviation of 15. To address the following business
+questions we will carry out hypothesis testing to get inference from the
+sample data on the population of manufactured stones.</p>
+<h2
+id="zingaro-has-reason-to-believe-that-the-unpolished-stones-may-not-be-suitable-for-printing.-is-zingaro-justified-in-thinking-so">Zingaro
+has reason to believe that the unpolished stones may not be suitable for
+printing. Is Zingaro justified in thinking so?</h2>
+<p>To answer this question we set up following hypothesis testing.</p>
+<ul>
+<li><p>Null Hypothesis <span class="math inline">\(H_0\)</span>: Mean
+hardness level of Unpolished stones is 150. <span
+class="math inline">\(\mu\)</span> <span
+class="math inline">\(\leq\)</span>150.</p></li>
+<li><p>Alternate Hypothesis - <span class="math inline">\(H_a\)</span> :
+<span class="math inline">\(\mu\)</span> <span
+class="math inline">\(&gt;\)</span> 150</p>
+<p>We observe in the Figure <a href="#fig:stones-dist"
+data-reference-type="ref" data-reference="fig:stones-dist">5</a> that
+hardness distribution of the sample is close to normal. We assume that
+population distribution is normal. Hardness index is a continuous
+variable and we do not know the population standard deviation. We
+therefore carry out one sample t-test for population mean. The p value
+was found to be 0.999 which is much higher than significance level 0.05.
+We therefore do not have enough significance to reject the null
+hypothesis and conclude that mean hardness index of Unpolished stones is
+less than 150. We can also observe this in the sample distribution plot
+in Figure <a href="#fig:stones-box" data-reference-type="ref"
+data-reference="fig:stones-box">6</a> box plot. 75% of Unpolished stones
+have hardness level below 160 and median value is below 140. Zingaro
+company is justified ih their thought and should take action to improve
+the hardness index of unpolished stones.</p></li>
+</ul>
+<figure>
+<img src="stone_hardness_distribution.png" id="fig:stones-dist" />
+</figure>
+<figure>
+<img src="stone_hardness.png" id="fig:stones-box" />
+</figure>
+<h2
+id="is-the-mean-hardness-of-the-polished-and-unpolished-stones-the-same">Is
+the mean hardness of the polished and unpolished stones the same?</h2>
+<p>Before setting up a hypothesis testing we can observe from Figure <a
+href="#fig:stones-box" data-reference-type="ref"
+data-reference="fig:stones-box">6</a> that box plot for Treated and
+polished stones is positioned a higher on y-axis than box plot for
+unpolished stones. Graphically we already have a hint that means are not
+equal. For statistical testing we employed the following null
+hypothesis.</p>
+<ul>
+<li><p>Null Hypothesis <span class="math inline">\(H_0\)</span> : means
+of hardness are equal for the polished and unpolished stones. <span
+class="math inline">\(\mu_{polished}\)</span> = <span
+class="math inline">\(\mu_{unpolished}\)</span>.</p></li>
+<li><p>Alternate Hypothesis <span class="math inline">\(H_a\)</span> :
+<span class="math inline">\(\mu_{polished}\)</span> <span
+class="math inline">\(&gt;\)</span> <span
+class="math inline">\(\mu_{unpolished}\)</span>.</p></li>
+</ul>
+<p>As the sample standard deviations are different, the population
+standard deviations may be assumed to be different. The data is
+continuous and we assume that the populations are normally distributed.
+We therefore could use two sample T-test for the population mean
+comparison. The p value from the test statistics is found to be 0.0007
+which is much less than level of significance 0.05. We therefore have
+enough evidence to reject the null hypothesis and conclude that means of
+hardness are not equal for the polished and unpolished stones. The
+polished stones have better hardness quality.</p>
+<h1 id="dental-implants">Dental Implants</h1>
+<div class="wrapfigure">
+<p><span>R</span><span>0.35</span> <img src="dentist_dataset.png"
+style="width:35.0%" alt="image" /></p>
+</div>
+<p>The hardness of metal implants in dental cavities depends on multiple
+factors, including the method of implantation, the temperature at which
+the metal is treated, and the specific alloy used. Additionally, the
+preferences and expertise of dentists, who may favor and excel in
+particular methods, play a significant role. The variable of interest in
+this context is the response, which refers to the hardness of the metal
+implants. Understanding how these factors interact can help in
+optimizing implant procedures and improving patient outcomes. Figure <a
+href="#fig:dataset" data-reference-type="ref"
+data-reference="fig:dataset">[fig:dataset]</a> show a glimpse of data
+set used for the statistical analysis. We have four categorical columns
+Dentist, Method, Alloy and Temp which will be treated as
+factors/level/treatment variables. The Response column is the outcome or
+dependent variable. During data cleaning we did not find any null or
+missing values. We have five Dentist category 1 to 5. Two types of
+alloys and three types of methods. There are three temperatures
+settings.</p>
+<h2
+id="how-does-the-hardness-of-implants-vary-depending-on-dentists">How
+does the hardness of implants vary depending on dentists?</h2>
+<div class="wrapfigure">
+<p><span>R</span><span>0.6</span> <img src="4_1.png" style="width:60.0%"
+alt="image" /></p>
+</div>
+<p>We are interested in effective hardness of implants with respect to
+different dentist. For this we have put box plots of Response variable
+with respect to dentist for two alloys in Figure <a href="#fig:4.1"
+data-reference-type="ref" data-reference="fig:4.1">[fig:4.1]</a>. We
+observe that dentist 5 has higher variability in hardness of implants
+than other dentists. We are interested in figuring out whether the
+differences in mean hardness level for different dentist is because of
+intra-variance or the differences between them. So we need to carry out
+a statistical test if the mean levels of all these dentist are equal. We
+can therefore invoke the one way ANOVA F-test here which does the exact
+task. We do the analysis for both types of Alloy. We did the
+Shapiro-Wilk’s test to check normality condition and Levene test to
+check equality of variance on the response variable. For both alloys
+Normality condition is found to be not valid and equality of variance
+condition is found to be valid. So the homogenity of variance assumpton
+is verified using Levene’s test. Even though Shapiro-Wilk’s test is
+failed we will assume that normality assumption holds and go forward
+with the test. The hypothesis being set up is as follows:</p>
+<ul>
+<li><p>Null Hypothesis <span class="math inline">\(H_0\)</span> : means
+of hardness level in dental implants are equal across the dentist from 1
+to 5.</p></li>
+<li><p>Alternate Hypothesis <span class="math inline">\(H_a\)</span> :
+At least one mean value is different for some dentist among 1 to
+5.</p></li>
+</ul>
+<p>For alloy 1 we found the p-value to be 0.116 and for alloy 2 it is
+found to be 0.718. So in both the cases we do not have enough
+statistical evidence to reject null hypothesis with respect to
+significance level of 5%. We conclude that mean hardness level is same
+for all the dentist in both the alloys. We can intuitively see it from
+the figure <a href="#fig:4.1" data-reference-type="ref"
+data-reference="fig:4.1">[fig:4.1]</a> that all the box plots are more
+or less on the same level. So, speaking on average it does not matter
+which dentist performs the dental implant. Nevertheless it is important
+to note that dentist 5 has higher spread than others and there are
+outliers in the box plots.</p>
+<h2 id="how-does-the-hardness-of-implants-vary-depending-on-methods">How
+does the hardness of implants vary depending on methods?</h2>
+<p>We have put a box plot on Figure <a href="#fig:4.2"
+data-reference-type="ref" data-reference="fig:4.2">7</a> of Response
+variable with respect to method used for implants for both alloy 1 and
+2. We observe that Method 1 and Method 2’s box plot are on similar level
+where as Method 3 seems to differ and is distinctively below. So
+graphically we have a hint that method used for dental implant has
+effect on hardness. Method 1 and 2 seem to provide better hardness
+result than method 3 in both alloys. We need to carry out statistical
+test to compare the mean levels across different method used. We
+performed one way ANOVA F-test. We do te analysis for both types of
+alloy separately. We did the Shapiro-Wilk’s test to check normality
+condition and Levene test to check equality of variance on the response
+variable. For both the alloys these assumption test failed. But owing to
+the importance of ANOVA test we proceed to carry out the test on sample
+data. The hypothesis being set up is as follows:</p>
+<ul>
+<li><p>Null Hypothesis <span class="math inline">\(H_0\)</span> : means
+of hardness level in dental implants are equal across the methods from 1
+to 3.</p></li>
+<li><p>Alternate Hypothesis <span class="math inline">\(H_a\)</span> :
+At least one mean value is different for some method among 1 to
+3.</p></li>
+</ul>
+<p>The p value from one way F-test is found to be very small compared to
+significance level of 5% in both alloy types. We therefore in both the
+cases reject the null hypothesis and conclude that means of hardness
+level is not same across the method used for implants. To find out which
+one differ we carried out multiple pairwise comparison test (Turkey
+HSD). We found that mean for method 3 is different from 1 and 2 in both
+types of alloys. This agrees with our graphical observation in figure <a
+href="#fig:4.2" data-reference-type="ref"
+data-reference="fig:4.2">7</a>. The results from Turkey HSD are shown in
+Figure <a href="#fig:hsd" data-reference-type="ref"
+data-reference="fig:hsd">[fig:hsd]</a> in both alloys.</p>
+<figure>
+<img src="4_2.png" id="fig:4.2" style="width:70.0%"
+alt="Response distribution across method used for implants." />
+<figcaption aria-hidden="true">Response distribution across method used
+for implants.</figcaption>
+</figure>
+<figure>
+<img src="HSD_alloy1" id="fig:hsd-alloy1"
+alt="test result for alloy 1" />
+<figcaption aria-hidden="true">test result for alloy 1</figcaption>
+</figure>
+<figure>
+<img src="HSD_alloy2.png" id="fig:hsd-alloy2"
+alt="test result for alloy 2" />
+<figcaption aria-hidden="true">test result for alloy 2</figcaption>
+</figure>
+<h2
+id="what-is-the-interaction-effect-between-the-dentist-and-method-on-the-hardness-of-dental-implants-for-each-type-of-alloy">
+What is the interaction effect between the dentist and method on the
+hardness of dental implants for each type of alloy?</h2>
+<p>We have put an interaction plot on Response variable between method
+and dentist in Figure <a href="#fig:interaction-plot"
+data-reference-type="ref" data-reference="fig:interaction-plot">10</a>.
+On the x axis we have three methods and different colored curve is
+plotted for all the dentist from 1 to 5. Each point represent mean of
+the sample corresponding to the method and dentist combination. The
+error bars are omitted for better visibility. We have done the analysis
+separately for alloy 1 and 2. In the previous question we had discovered
+that method 3 has lower hardness result compared to other methods. this
+is also reflected in this interaction plot. For most dentist combination
+the mean hardness level for method 3 has lower response value. If higher
+hardness level is desired then dentists not performing well in method 3
+should consider their options more towards method 1 and 2.<br />
+<strong>Alloy 1 :</strong></p>
+<ul>
+<li><p>Dentist 4 and 5 have similar performance. Both of them have
+distinctively low response level for method 3.</p></li>
+<li><p>The variation across methods for dentist 1,2 and 3 is relatively
+less.</p></li>
+<li><p>dentist 1 and 2 performs method 1 better. Dentist 1,2 and 3
+perform method 3 very similarly.</p></li>
+</ul>
+<p><strong>Alloy 2:</strong></p>
+<ul>
+<li><p>Alloy 2 has a little bit different story than Alloy 1.</p></li>
+<li><p>Here for method 3 all the dentist have lower hardness result.
+Alloy 2 does not seem very conducive for method 3 across all the
+dentist.</p></li>
+<li><p>Method 2 is best performed by dentist 1. Dentist 5 have good
+response on method 1 and 2 but very low on method 3. Dentist 5 should
+prefer method 1 and 2.</p></li>
+<li><p>In both alloys dentist 3(green) has least variability across
+three methods.</p></li>
+</ul>
+<figure>
+<img src="interaction_plot.png" id="fig:interaction-plot"
+alt="Interaction plot on Response variable between method and dentist for alloy 1(left) and 2(right)." />
+<figcaption aria-hidden="true">Interaction plot on Response variable
+between method and dentist for alloy 1(left) and 2(right).</figcaption>
+</figure>
+<h2
+id="how-does-the-hardness-of-implants-vary-depending-on-dentists-and-methods-together">How
+does the hardness of implants vary depending on dentists and methods
+together?</h2>
+<p>For addressing this question we will use two-way ANOVA test. It is
+used to examine the interaction effect between two independent variables
+(factors) on a single dependent variable. Here we have two factors
+Method and Dentist. The dependent variable is Hardness level i.e
+Response. The following are the hypothesis design for the test.</p>
+<ul>
+<li><p>Hypothesis for main effect of Method factor</p>
+<ul>
+<li><p>Null Hypothesis <span class="math inline">\(H_0\)</span> : Method
+used for implant doe not have any effect on Response level.</p></li>
+<li><p>Alternate <span class="math inline">\(H_a\)</span> : Method used
+for implant does have effect on Response level.</p></li>
+</ul></li>
+<li><p>Hypothesis for main effect of Dentist factor</p>
+<ul>
+<li><p>Null Hypothesis <span class="math inline">\(H_0\)</span> :
+Different dentist get same result on Response level.</p></li>
+<li><p>Alternate <span class="math inline">\(H_a\)</span> : Different
+dentist get variable result on Response level.</p></li>
+</ul></li>
+<li><p>Hypothesis for interaction effect</p>
+<ul>
+<li><p>Null Hypothesis <span class="math inline">\(H_0\)</span> : There
+is no interaction between Method and Dentist on Response level.</p></li>
+<li><p>Alternate <span class="math inline">\(H_a\)</span> : There is an
+interaction between Method and Dentist on Response level.</p></li>
+</ul></li>
+</ul>
+<figure>
+<img src="two_anova_alloy1.png" id="fig:two-way-alloy1"
+alt="two way ANOVA test result for alloy 1" />
+<figcaption aria-hidden="true">two way ANOVA test result for alloy
+1</figcaption>
+</figure>
+<figure>
+<img src="two_anova_alloy2.png" id="figtwo-way-alloy2"
+alt="two way ANOVA test result for alloy 2" />
+<figcaption aria-hidden="true">two way ANOVA test result for alloy
+2</figcaption>
+</figure>
+<p>Figure <a href="#fig:two-way-anova" data-reference-type="ref"
+data-reference="fig:two-way-anova">[fig:two-way-anova]</a> shows the
+test result table for two way ANOVA on both typre of alloys. The last
+column indicates the p-value for the test statistics. We see that p
+value is 0.0114 and 0.3718 for Dentist factor in alloy 1 and 2
+respectively. Which is larger than our accepted significance level of
+5%. We therefore fail to reject the null hypothesis for Dentist factor.
+Therefore, on average different dentist get same result on hardness
+level. The p value for Method factor in alloy 1 is 0.0002 which very
+small compared to significance level. In this case null hypothesis is
+rejected and we conclude that method of implant has efect on hardness
+level in alloy 1. Similarly, The p value for Method factor in alloy 2 is
+close to zero, null hypothesis is rejected and we conclude that method
+of implant has significant effect on hardness level in alloy 2. For the
+interaction between Method and Dentist factor, we find p value to be
+0.0067. We have enough statistical evidence for the null hypothesis for
+interaction effect in alloy1 to be rejected. With respect to
+significance level of 5% we conclude that there is interaction between
+method and dentist on response variable. We also observed this
+qualitatively in previous question where we discussed the interaction
+plot in Figure <a href="#fig:interaction-plot" data-reference-type="ref"
+data-reference="fig:interaction-plot">10</a>. In case of alloy 2 the p
+value for interaction term is 0.093. Although we do not reject null
+hypothesis here with respect to significance level of 5%, we can
+conclude that there is 90.7% chance of interaction effect to be true. So
+interaction between method and dentist factor in alloy 2 can not be
+ignored.</p>
+<h2 class="unnumbered"
+id="end-of-report-submitted-by-haraprasad-dhal">End of Report<br />
+Submitted by : Haraprasad Dhal</h2>
+</body>
+</html>
