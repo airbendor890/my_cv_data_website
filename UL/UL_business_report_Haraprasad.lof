@@ -1,0 +1,17 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces A snapshot of data set used for analysis.}}{2}{figure.caption.3}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Numerical variables distribution}}{3}{figure.caption.4}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Credit cards and average credit limits distribution with respect to online visits.}}{4}{figure.caption.5}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Credit cards and average credit limits distribution with respect to Bank visits.}}{4}{figure.caption.6}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Credit cards and average credit limits distribution with respect to Number of calls made.}}{4}{figure.caption.7}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Correlation among the variables.}}{5}{figure.caption.8}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Plot for outlier detection}}{6}{figure.caption.9}%
+\contentsline {figure}{\numberline {8}{\ignorespaces scaled data}}{6}{figure.caption.10}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Average distortion and Silhouette score across K. }}{7}{figure.caption.11}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Silhouette Score visualization with varied K}}{8}{figure.caption.12}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Cluster profile from KMeans. K = 3}}{8}{figure.caption.13}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Box plot of different clusters obtained from KMeans.}}{9}{figure.caption.14}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Dendogram with different linkage methods for Euclidean metric.}}{10}{figure.caption.15}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Cluster profile from Hierarchical clustering. No. of clusters = 3}}{10}{figure.caption.16}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Box plot of different clusters obtained from Hierarchical clustering.}}{11}{figure.caption.17}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Cluster Method Comparison.}}{13}{figure.caption.18}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Cluster Visualization.}}{13}{figure.caption.19}%

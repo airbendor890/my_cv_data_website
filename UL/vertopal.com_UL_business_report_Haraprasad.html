@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>2afa0dacb8ff48e59108eac243f7f54b</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="center">
+<p><span style="color: orange"><span><strong><span>AllLife Bank Credit
+Card Customer Service</span></strong></span></span></p>
+</div>
+<h1 id="business-context">Business context</h1>
+<p>AllLife Bank aims to enhance its credit card customer base in the
+upcoming financial year. Insights from the marketing research team
+suggest that market penetration can be improved. Consequently, the
+Marketing team plans to launch personalized campaigns targeting new
+customers and upselling to existing ones. Additionally, market research
+revealed that customers perceive the bank’s support services poorly. In
+response, the Operations team intends to upgrade the service delivery
+model to ensure faster resolution of customer queries. Both the Head of
+Marketing and Head of Delivery have decided to seek assistance from the
+Data Science team to achieve these goals.</p>
+<p>As a data scientist at AllLife Bank, my objective is to identify
+distinct customer segments based on their spending patterns and past
+interactions with the bank. By employing clustering algorithms, I aim to
+uncover meaningful insights that will enable the bank to tailor its
+marketing strategies and enhance customer service. My recommendations
+will focus on how to effectively target new customers and up sell to
+existing ones, ensuring a more personalized and efficient approach to
+customer engagement.</p>
+<h1 id="exploratory-data-analysis">Exploratory data analysis</h1>
+<h2 id="data-set-description">Data set description</h2>
+<p>The dataset provided includes information on various bank customers
+and their financial attributes, such as credit limits and the total
+number of credit cards they hold. It also details the different channels
+through which customers have contacted the bank for queries, including
+in-person visits, online interactions, and calls to the call center.</p>
+<figure>
+<img src="dataset.png" id="fig:dataset" style="width:85.0%"
+alt="A snapshot of data set used for analysis." />
+<figcaption aria-hidden="true">A snapshot of data set used for
+analysis.</figcaption>
+</figure>
+<p>The data set consists of 660 records and 7 columns. I dropped two
+columns which represented unique customers and Serial number. Not useful
+for the analysis. After this we have 5 columns and all are numerical. No
+missing value or irregular values were found. All the records were
+unique. My motivation is to cluster these customers based on this five
+dimensional data set.</p>
+<h2 id="univariate-and-bivariate-analysis">Univariate and Bivariate
+Analysis</h2>
+<p>The figure <a href="#fig:Numerical variables distribution"
+data-reference-type="ref"
+data-reference="fig:Numerical variables distribution">[fig:Numerical
+variables distribution]</a> shows the distribution of all 5 numerical
+variables in the dataset. It shows the Histogram on the top of which box
+plot is aligned with the same scale. Figure <a
+href="#fig:box_Avg_Credit_Limit" data-reference-type="ref"
+data-reference="fig:box_Avg_Credit_Limit">2</a> shows the distribution
+of Average Credit Limit of customers. On average customers have a limit
+of 34,574. The Mean is much higher than median which shows that the
+distribution is highly right skewed. There are many outliers on the
+higher end of limit. Figure <a href="#fig:box_Total_Credit_Cards"
+data-reference-type="ref"
+data-reference="fig:box_Total_Credit_Cards">3</a> the distribution of
+total number of credit card owned by the customers from AllLife Bank.
+75% of customers have 6 or less number of credit cards. The maximum
+number owned is 10. Figure <a href="#fig:box_Total_visits_bank"
+data-reference-type="ref"
+data-reference="fig:box_Total_visits_bank">4</a> shows the distribution
+of number of visits from the customers to bank. Maximum number of times
+visited is 5. Figure <a href="#fig:box_Total_visits_online"
+data-reference-type="ref"
+data-reference="fig:box_Total_visits_online">5</a> shows the
+distribution for online visits to banks websites and services. 75%
+visited 5 times or less. But there are many outliers up to 15 times.
+Similarly from figure <a href="#fig:box_Total_calls_made"
+data-reference-type="ref"
+data-reference="fig:box_Total_calls_made">6</a> we can see the
+distribution for number of phone calls made by the customers.</p>
+<figure>
+<img src="box_Avg_Credit_Limit.png" id="fig:box_Avg_Credit_Limit" />
+</figure>
+<figure>
+<img src="box_Total_Credit_Cards.png" id="fig:box_Total_Credit_Cards" />
+</figure>
+<figure>
+<img src="box_Total_visits_bank.png" id="fig:box_Total_visits_bank" />
+</figure>
+<figure>
+<img src="box_Total_visits_online.png"
+id="fig:box_Total_visits_online" />
+</figure>
+<figure>
+<img src="box_Total_calls_made.png" id="fig:box_Total_calls_made" />
+</figure>
+<figure>
+<img src="bi_box_Total_visits_online_Total_Credit_Cards.png"
+id="fig:bi_box_Total_visits_online_Total_Credit_Cards"
+alt="Total credit cards vs total online visits." />
+<figcaption aria-hidden="true">Total credit cards vs total online
+visits.</figcaption>
+</figure>
+<figure>
+<img src="bi_box_Total_visits_online_Avg_Credit_Limit.png"
+id="fig:bi_box_Total_visits_online_Avg_Credit_Limit"
+alt="Average credit limit vs Total online visits." />
+<figcaption aria-hidden="true">Average credit limit vs Total online
+visits.</figcaption>
+</figure>
+<figure>
+<img src="bi_box_Total_visits_bank_Avg_Credit_Limit.png"
+id="fig:bi_box_Total_visits_bank_Avg_Credit_Limit.pngs"
+alt="Average credit limit vs Total Bank visits." />
+<figcaption aria-hidden="true">Average credit limit vs Total Bank
+visits.</figcaption>
+</figure>
+<figure>
+<img src="bi_box_Total_visits_bank_Total_Credit_Cards.png"
+id="fig:bi_box_Total_visits_bank_Total_Credit_Cards.png"
+alt="Total credit cards vs total Bank visits." />
+<figcaption aria-hidden="true">Total credit cards vs total Bank
+visits.</figcaption>
+</figure>
+<figure>
+<img src="bi_box_Total_calls_made_Avg_Credit_Limit.png"
+id="fig:bi_box_Total_calls_made_Avg_Credit_Limit.png"
+alt="Average credit limit vs Total calls made." />
+<figcaption aria-hidden="true">Average credit limit vs Total calls
+made.</figcaption>
+</figure>
+<figure>
+<img src="bi_box_Total_calls_madek_Total_Credit_Cards.png"
+id="fig:bi_box_Total_calls_madek_Total_Credit_Cards.pngt"
+alt="Total credit cards vs total calls made." />
+<figcaption aria-hidden="true">Total credit cards vs total calls
+made.</figcaption>
+</figure>
+<p>I tried to investigate how number of cards and credit limit owned by
+the customers varied with respect to how many times they contacted or
+visited bank through different channels. Figure <a
+href="#fig:Credit cards and average credit limits distribution with respect to online visits"
+data-reference-type="ref"
+data-reference="fig:Credit cards and average credit limits distribution with respect to online visits">[fig:Credit
+cards and average credit limits distribution with respect to online
+visits]</a> shows the Credit cards and average credit limits
+distribution with respect to online visits. We observe that customer
+visits higher than 6 have significantly higher number of credit cards
+and limit. In fact from this plot we sort of get a glimpse into two
+major clusters. Therefore online visit is a good segregate variable for
+different customers group. Figure <a
+href="#fig:Credit cards and average credit limits distribution with respect to Bank visits"
+data-reference-type="ref"
+data-reference="fig:Credit cards and average credit limits distribution with respect to Bank visits">[fig:Credit
+cards and average credit limits distribution with respect to Bank
+visits]</a> shows the Credit cards and average credit limits
+distribution with respect to Bank visits. We observe that the variation
+is more pronounced for Total number of credit cards. Customers with
+higher number of cards made more visits to Banks which is expected since
+more the cards the more maintenance and services one might need. Similar
+story is also observed for the Total calls made in case of Number of
+credit cards as shown in figure <a
+href="#fig:Credit cards and average credit limits distribution with respect to Number of calls made."
+data-reference-type="ref"
+data-reference="fig:Credit cards and average credit limits distribution with respect to Number of calls made.">[fig:Credit
+cards and average credit limits distribution with respect to Number of
+calls made.]</a> which depicts Credit cards and average credit limits
+distribution with respect to Number of calls made.</p>
+<figure>
+<img src="corr.png" id="fig:corrt"
+alt="Correlation among the variables." />
+<figcaption aria-hidden="true">Correlation among the
+variables.</figcaption>
+</figure>
+<p>Figure <a href="#fig:corrt" data-reference-type="ref"
+data-reference="fig:corrt">13</a> shows the heat map for the correlation
+among five variables. Bank visits and Online visits are negatively
+correlated with -0.55. This shows that customers using online
+services/modes are less likely to visit the bank in person. we also
+observe that number of credit cards and number of phone calls are
+negatively correlated with -0.65. In contrast to this number of credit
+cards is positively correlated to online visits. Customers with higher
+credit cards and limit are more likely to use online methods.</p>
+<h1 id="data-preprocessing">Data Preprocessing</h1>
+<p>Data preprocessing is a crucial step in clustering to ensure that the
+data is clean, consistent, and suitable for analysis. The data set did
+not have any irregular or missing values. As for the outliers that we
+found in credit limit and online visits, it would not have been a good
+choice to remove these, since all of these records are valid and also no
+instability was found during clustering implementation due to these
+outliers which off course if described posterior to implementation.
+Normalization of the data ensures that all features contribute equally
+to the distance calculations. Common methods include Min-Max scaling and
+Z-score normalization. I carried out the Z-score on all the five
+features since the range of values for credit limit is significantly
+higher than all other columns. This was necessary to avoid bias to any
+particular feature. After the transformation the normalized dataset is
+shown in distribution plot figure <a href="#fig:scaled_data"
+data-reference-type="ref" data-reference="fig:scaled_data">15</a>. We
+see that all the features are now centered around the mean zero.</p>
+<figure>
+<img src="outlier.png" id="fig:outlier"
+alt="Plot for outlier detection" />
+<figcaption aria-hidden="true">Plot for outlier detection</figcaption>
+</figure>
+<figure>
+<img src="scaled_data.png" id="fig:scaled_data" alt="scaled data" />
+<figcaption aria-hidden="true">scaled data</figcaption>
+</figure>
+<h1 id="k-means-clustering">K-means Clustering</h1>
+<p>K-Means clustering is a popular unsupervised machine learning
+algorithm used to partition a dataset into distinct groups or clusters.
+The goal is to divide the data points into k clusters, where each data
+point belongs to the cluster with the nearest mean. The steps involved
+are as follows :</p>
+<ul>
+<li><p>Initialization: Choose the number of clusters k and randomly
+initialize k centroids.</p></li>
+<li><p>Assignment: Assign each data point to the nearest centroid based
+on the Euclidean distance.</p></li>
+<li><p>Update: Recalculate the centroids as the mean of all data points
+assigned to each cluster.</p></li>
+<li><p>Repeat: Repeat the assignment and update steps until the
+centroids no longer change significantly or a maximum number of
+iterations is reached.</p></li>
+</ul>
+<figure>
+<img src="elbow.png" id="fig:elbow"
+alt="Average distortion across K to find elbow point." />
+<figcaption aria-hidden="true">Average distortion across K to find elbow
+point.</figcaption>
+</figure>
+<figure>
+<img src="sil_score.png" id="fig:sil_score"
+alt="Silhouette score with K" />
+<figcaption aria-hidden="true">Silhouette score with K</figcaption>
+</figure>
+<p>The metric used here for the KMeans distance is Euclidean. To figure
+out suitable K for the given data set I checked the Elbow method and
+Silhouette score for different K. The Plot of the sum of squared
+distances from each point to its assigned centroid (within-cluster sum
+of squares) for different values of k is shown in figure <a
+href="#fig:elbow" data-reference-type="ref"
+data-reference="fig:elbow">16</a>. The optimal k is often found at the
+"elbow" point where the rate of decrease slows down. we observe that K
+=3. Also along side we calculate the silhouette score for different K as
+shown in figure <a href="#fig:sil_score" data-reference-type="ref"
+data-reference="fig:sil_score">17</a> and <a
+href="#fig:Average distortion and Silhouette score across K."
+data-reference-type="ref"
+data-reference="fig:Average distortion and Silhouette score across K.">[fig:Average
+distortion and Silhouette score across K.]</a>. Silhouette score
+measures how similar a data point is to its own cluster compared to
+other clusters. A higher silhouette score indicates better-defined
+clusters. From this analysis we find that the optimal k for this data
+set is 3. The Silhouette score is highest for k = 3 : 0.59. we chose the
+final KMeans model with 3 clusters.</p>
+<figure>
+<img src="silhoute_K_3.png" id="fig:silhoute_K_3.png"
+alt="Silhouette plot of KMeans Clustering for 660 samples in 3 centers." />
+<figcaption aria-hidden="true">Silhouette plot of KMeans Clustering for
+660 samples in 3 centers.</figcaption>
+</figure>
+<figure>
+<img src="silhoute_K_4.png" id="fig:silhoute_K_4.png"
+alt="Silhouette plot of KMeans Clustering for 660 samples in 4 centers." />
+<figcaption aria-hidden="true">Silhouette plot of KMeans Clustering for
+660 samples in 4 centers.</figcaption>
+</figure>
+<figure>
+<img src="silhoute_K_5.png" id="fig:silhoute_K_5.png"
+alt="Silhouette plot of KMeans Clustering for 660 samples in 5 centers." />
+<figcaption aria-hidden="true">Silhouette plot of KMeans Clustering for
+660 samples in 5 centers.</figcaption>
+</figure>
+<figure>
+<img src="silhoute_K_6.png" id="fig:silhoute_K_6.png"
+alt="Silhouette plot of KMeans Clustering for 660 samples in 6 centers." />
+<figcaption aria-hidden="true">Silhouette plot of KMeans Clustering for
+660 samples in 6 centers.</figcaption>
+</figure>
+<figure>
+<img src="Kmeans_profile.png" id="fig:Kmeans_profile"
+alt="Cluster profile from KMeans. K = 3" />
+<figcaption aria-hidden="true">Cluster profile from KMeans. K =
+3</figcaption>
+</figure>
+<p>Figure <a href="#fig:Kmeans_profile" data-reference-type="ref"
+data-reference="fig:Kmeans_profile">22</a> shows the cluster profile of
+3 clusters obtained from the final KMeans model. It shows the mean
+values of each field corresponding to all three clusters. Figure <a
+href="#fig:Kmeans_cluster_box_plots" data-reference-type="ref"
+data-reference="fig:Kmeans_cluster_box_plots">23</a> shows box plot for
+all the numerical variables in each cluster categories.</p>
+<figure>
+<img src="Kmeans_cluster_box_plots.png"
+id="fig:Kmeans_cluster_box_plots"
+alt="Box plot of different clusters obtained from KMeans." />
+<figcaption aria-hidden="true">Box plot of different clusters obtained
+from KMeans.</figcaption>
+</figure>
+<p>From these two figures, <a href="#fig:Kmeans_profile"
+data-reference-type="ref" data-reference="fig:Kmeans_profile">22</a> and
+<a href="#fig:Kmeans_cluster_box_plots" data-reference-type="ref"
+data-reference="fig:Kmeans_cluster_box_plots">23</a> a summary for each
+cluster properties is generated.</p>
+<ul>
+<li><p>Cluster 0:</p>
+<ul>
+<li><p>There are 386 customers in this segment out of 660.</p></li>
+<li><p>75% of customers in this group made less than 3 calls.</p></li>
+<li><p>Atmost three online visits are made from these
+customers.</p></li>
+<li><p>These customers have relatively higher number of in person Bank
+visits than other two.</p></li>
+<li><p>75 % have 6 or less number of credit cards.</p></li>
+<li><p>Median credit limit is around 30,000.</p></li>
+</ul></li>
+<li><p>Cluster 1:</p>
+<ul>
+<li><p>There are 224 customers in this segment.</p></li>
+<li><p>This segment have made higher number of phone calls. At least
+half of them made more than 6 calls.</p></li>
+<li><p>75 % of them made less than 4 online visits.</p></li>
+<li><p>All of them had at most two visits to the bank in
+person.</p></li>
+<li><p>They have at most 4 credit cards.</p></li>
+<li><p>Median credit limit is very less around 12,000.</p></li>
+</ul></li>
+<li><p>Cluster 2:</p>
+<ul>
+<li><p>There are only 50 customers in this segment out of 660.</p></li>
+<li><p>75 % of them made less than two phone calls.</p></li>
+<li><p>They made relatively a very high number of online
+visits.</p></li>
+<li><p>These customers don’t visit to bank in person. At most they made
+1 visit personally.</p></li>
+<li><p>They hold higher number of credit cards. Up to 10.</p></li>
+<li><p>Credit limit is also very high reaching up to 200,000.</p></li>
+</ul></li>
+</ul>
+<h1 id="hierarchical-clustering">Hierarchical Clustering</h1>
+<p>Hierarchical clustering is a method of cluster analysis that seeks to
+build a hierarchy of clusters. It is particularly useful for identifying
+nested clusters and understanding the structure of the data. There are
+two main types of hierarchical clustering:</p>
+<ul>
+<li><p>Agglomerative (Bottom-Up) Clustering: This approach starts with
+each data point as its own cluster and iteratively merges the closest
+pairs of clusters until all points are in a single cluster or a desired
+number of clusters is reached.</p></li>
+<li><p>Divisive (Top-Down) Clustering: This approach starts with all
+data points in a single cluster and iteratively splits the clusters into
+smaller clusters until each data point is its own cluster or a desired
+number of clusters is reached.</p></li>
+</ul>
+<p>In this analysis, I have used Agglomerative Clustering approach. To
+figure out appropriate number of cluster for the data set I have used
+the dendrogram which is a tree-like diagram that shows the arrangement
+of the clusters produced by hierarchical clustering. Along side this I
+have calculated The Cophonetic correlation coefficients for various
+combination of metric and Linkage Methods. The cophenetic correlation
+coefficient measures how faithfully the dendrogram preserves the
+pairwise distances between the original data points. A higher cophenetic
+correlation indicates that the dendrogram accurately reflects the
+original data structure.</p>
+<figure>
+<img src="Euc_dendo_Average_linkage.png"
+id="fig:Euc_dendo_Average_linkage.png"
+alt="Dendrogram for Average linkage. Cophenetic correlation = 0.898" />
+<figcaption aria-hidden="true">Dendrogram for Average linkage.
+Cophenetic correlation = 0.898</figcaption>
+</figure>
+<figure>
+<img src="Euc_dendo_centroid_linkage.png"
+id="fig:Euc_dendo_centroid_linkage.png"
+alt="Dendrogram for centroid linkage. Cophenetic correlation = 0.894." />
+<figcaption aria-hidden="true">Dendrogram for centroid linkage.
+Cophenetic correlation = 0.894.</figcaption>
+</figure>
+<figure>
+<img src="Euc_dendo_complete_linkage.png"
+id="fig:Euc_dendo_complete_linkage.pngg"
+alt="Dendrogram for Complete linkage. Cophenetic correlation = 0.860 ." />
+<figcaption aria-hidden="true">Dendrogram for Complete linkage.
+Cophenetic correlation = 0.860 .</figcaption>
+</figure>
+<figure>
+<img src="Euc_dendo_Weighted_linkage.png"
+id="fig:Euc_dendo_Weighted_linkage.png"
+alt="Dendrogram for Weighted linkage. Cophenetic correlation = 0.886." />
+<figcaption aria-hidden="true">Dendrogram for Weighted linkage.
+Cophenetic correlation = 0.886.</figcaption>
+</figure>
+<p>I found that among different metric and linkage methods, Euclidean
+metric with Average linkage gave best correlation of 0.898. Figure <a
+href="#fig:Dendogram with different linkage methods for Euclidean metric."
+data-reference-type="ref"
+data-reference="fig:Dendogram with different linkage methods for Euclidean metric.">[fig:Dendogram
+with different linkage methods for Euclidean metric.]</a> shows
+Dendrograms with different linkage methods for Euclidean metric with at
+least 0.8 of cophenetic correlation. From these reliable dendrograms it
+is observed that 3 clusters would have been appropriate for the dataset
+as beyond this the branches grew rapidly. So we chose the final
+Hierarchical(HC) model with 3 clusters.</p>
+<figure>
+<img src="HC_profile.png" id="fig:HC_profile"
+alt="Cluster profile from Hierarchical clustering. No. of clusters = 3" />
+<figcaption aria-hidden="true">Cluster profile from Hierarchical
+clustering. No. of clusters = 3</figcaption>
+</figure>
+<p>Figure <a href="#fig:HC_profile" data-reference-type="ref"
+data-reference="fig:HC_profile">28</a> shows the cluster profile of 3
+clusters obtained from the final HC model. It shows the mean values of
+each field corresponding to all three clusters. Figure <a
+href="#fig:HC_cluster_box_plots" data-reference-type="ref"
+data-reference="fig:HC_cluster_box_plots">29</a> shows box plot for all
+the numerical variables in each cluster categories.</p>
+<figure>
+<img src="HC_cluster_box_plots.png" id="fig:HC_cluster_box_plots"
+alt="Box plot of different clusters obtained from Hierarchical clustering." />
+<figcaption aria-hidden="true">Box plot of different clusters obtained
+from Hierarchical clustering.</figcaption>
+</figure>
+<p>From these two figures, <a href="#fig:HC_profile"
+data-reference-type="ref" data-reference="fig:HC_profile">28</a> and <a
+href="#fig:HC_cluster_box_plots" data-reference-type="ref"
+data-reference="fig:HC_cluster_box_plots">29</a> a summary for each
+cluster properties is generated.</p>
+<ul>
+<li><p>Cluster 0:</p>
+<ul>
+<li><p>There are 387 customers in this segment out of 660.</p></li>
+<li><p>75% of customers in this group made less than 3 calls.</p></li>
+<li><p>At most three online visits are made from these
+customers.</p></li>
+<li><p>These customers have relatively higher number of in person Bank
+visits than other two.</p></li>
+<li><p>75 % have 6 or less number of credit cards.</p></li>
+<li><p>Median credit limit is around 30,000.</p></li>
+</ul></li>
+<li><p>Cluster 1:</p>
+<ul>
+<li><p>There are only 50 customers in this segment out of 660.</p></li>
+<li><p>75 % of them made less than two phone calls.</p></li>
+<li><p>They made relatively a very high number of online
+visits.</p></li>
+<li><p>These customers don’t visit to bank in person. At most they made
+1 visit personally.</p></li>
+<li><p>They hold higher number of credit cards. Up to 10.</p></li>
+<li><p>Credit limit is also very high reaching up to 200,000.</p></li>
+</ul></li>
+<li><p>Cluster 2:</p>
+<ul>
+<li><p>There are 223 customers in this segment.</p></li>
+<li><p>This segment have made higher number of phone calls. At least
+half of them made more than 6 calls.</p></li>
+<li><p>75 % of them made less than 4 online visits.</p></li>
+<li><p>All of them had at most two visits to the bank in
+person.</p></li>
+<li><p>They have atmost 4 credit cards.</p></li>
+<li><p>Median credit limit is very less around 12,000.</p></li>
+</ul></li>
+</ul>
+<h1 id="comparison-between-two-techniques">Comparison between two
+techniques</h1>
+<p>The results from both clustering techniques KMeans and
+Hierarchical(HC) are same both qualitatively and quantitatively. Both of
+them gave 3 clusters with almost exact identity/properties, only cluster
+1 and 2 were interchanged. This can be observed from Figure <a
+href="#fig:Cluster Method Comparision" data-reference-type="ref"
+data-reference="fig:Cluster Method Comparision">[fig:Cluster Method
+Comparision]</a>. The bar plots are identical with cluster 1 and 2
+interchanged. Also this is evident from cluster visualization with 2
+features in figure <a href="#fig:Cluster Visualization"
+data-reference-type="ref"
+data-reference="fig:Cluster Visualization">[fig:Cluster
+Visualization]</a>, Only colors of cluster 1 and 2 are interchanged. The
+number of customers were also almost same for each segments in both
+methods.</p>
+<p>In terms of time complexity HC took significantly higher time than
+KMeans since HC is connectivity based clustering. It grows as
+O(n*n).</p>
+<figure>
+<img src="Kmens_segement_profile_bar.png"
+id="fig:Kmens_segement_profile_bar.png"
+alt="Bar plot of means of all the fields across 3 KMeans segment." />
+<figcaption aria-hidden="true">Bar plot of means of all the fields
+across 3 KMeans segment.</figcaption>
+</figure>
+<figure>
+<img src="HC_Clusters_profilr_bar.png"
+id="fig:HC_Clusters_profilr_bar.png"
+alt="Bar plot of means of all the fields across 3 HC segment." />
+<figcaption aria-hidden="true">Bar plot of means of all the fields
+across 3 HC segment.</figcaption>
+</figure>
+<figure>
+<img src="cluster_vis_cards_vs_online_visits_HC.png"
+id="fig:cluster_vis_cards_vs_online_visits_HC"
+alt="Scatterplot between total Cards and online visits with cluster annoted from HC." />
+<figcaption aria-hidden="true">Scatterplot between total Cards and
+online visits with cluster annoted from HC.</figcaption>
+</figure>
+<figure>
+<img src="cluster_vis_credit_vs_online_visit_HC.png"
+id="fig:cluster_vis_credit_vs_online_visit_HCg"
+alt="Scatterplot between Credit limit and online visits with cluster annoted from HC." />
+<figcaption aria-hidden="true">Scatterplot between Credit limit and
+online visits with cluster annoted from HC.</figcaption>
+</figure>
+<figure>
+<img src="cluster_vis_cards_vs_online_visits_KM.png"
+id="fig:cluster_vis_cards_vs_online_visits_KM."
+alt="Scatterplot between total Cards and online visits with cluster annoted from Kmeans" />
+<figcaption aria-hidden="true">Scatterplot between total Cards and
+online visits with cluster annoted from Kmeans</figcaption>
+</figure>
+<figure>
+<img src="cluster_vis_credit_vs_online_visit_KM.png"
+id="fig:cluster_vis_credit_vs_online_visit_KM"
+alt="Scatterplot between Credit limit and online visits with cluster annoted from Kmeans." />
+<figcaption aria-hidden="true">Scatterplot between Credit limit and
+online visits with cluster annoted from Kmeans.</figcaption>
+</figure>
+<h1 id="actionable-insights-and-recommendations">Actionable insights and
+Recommendations</h1>
+<h2 id="actionable-insights">Actionable insights</h2>
+<ul>
+<li><p>There are three customers segment for the credit service at
+AllLife Bank. Let’s call them A, B and C.</p></li>
+<li><p>Segment A comprise more than 50 % of customers. They are more
+likely to visit Bank in person and hold up to 6 or 7 credit cards. Their
+median credit limit is round 30,000.</p></li>
+<li><p>Segemt B consists of 7.5 % of total customers. They make very
+less phone calls or visit in person. They make higher activity in online
+mode. Hold higher number of cards and credit limits are usually very
+high reaching up to 200,000.</p></li>
+<li><p>Segment C consists of around 34 % of total customers. They make
+higher number of phone calls for the services. They have at most 4
+credit cards in possession and median credit limit is very less around
+12,000.</p></li>
+</ul>
+<h2 id="business-recommendations">Business Recommendations</h2>
+<ul>
+<li><p>The mode of communication for their queries is very distinct in
+three customer segments we found. Customer service should be fine
+tailored to adapt to these communication modes (phones, in person and
+online).</p></li>
+<li><p>Segment A is the largest. Yet most of them visit bank in person.
+If we could improve online mode or encourage them to use online mode, we
+could profit from this segment as higher usage of online mode is
+correlated with more credit cards.</p></li>
+<li><p>Section C has 34 % of total yet they have comparatively few
+credit cards and limits. Incentives could be offered to customers in
+these segment to promote credit service. Since they prefer phone calls
+for query, customer care department should be trained to understand this
+segment better during calls and could also make some promotions towards
+call end.</p></li>
+<li><p>Segment B only makes 7.5 % yet they are biggest users in terms of
+amount. Since they prefer online modes we need to make sure that their
+user experience is seamless during website or app visit. They have
+usually high number of credit cards. We need to make sure that apps or
+websites make access to their card portfolios easily.</p></li>
+<li><p>Robust Feed backs mechanism should be developed in all the above
+modes to address all the three segments and understand if they were
+satisfied in the customer support.</p></li>
+<li><p>The three cluster could be used to identify new incoming
+customers and serve them accordingly. Simply record their prefer mode of
+communication, credit limit and number of cards they start to
+acquire.</p></li>
+</ul>
+<section id="end-of-report-submitted-by-haraprasad-dhal"
+class="unnumbered centering">
+<h2 class="unnumbered">End of Report<br />
+Submitted by : Haraprasad Dhal</h2>
+</section>
+</body>
+</html>
