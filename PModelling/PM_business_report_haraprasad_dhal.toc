@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Business context}{2}{section.1}%
+\contentsline {section}{\numberline {2}Exploratory data analysis}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Data set description}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}What does the distribution of content views look like?}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}What does the distribution of genres look like?}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}How does the viewership vary with the season and day of release?}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}What is the correlation between trailer views and content views?}{5}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Linear Regression model}{5}{section.3}%
+\contentsline {section}{\numberline {4}Actionable insights and Recommendations}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Actionable insights}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Business Recommendations}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Appendix}{10}{subsection.4.3}%
