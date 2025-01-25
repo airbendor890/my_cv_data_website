@@ -1,0 +1,10 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces A snapshot of data set used for analysis.}}{2}{figure.caption.3}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Profile of Categorical variables.}}{3}{figure.caption.4}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Normalized stack plot distribution of categorical variables with respect target.}}{4}{figure.caption.5}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Distribution of numerical variables with respect attrition flag}}{5}{figure.caption.6}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Model performance with different sampling.}}{7}{figure.caption.7}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Training performance comparison.}}{7}{figure.caption.8}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Validation performance comparison.}}{8}{figure.caption.9}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Feature importance from final model(First 10).}}{8}{figure.caption.10}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Distribution of numerical variables with respect attrition flag}}{10}{figure.caption.12}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Correlation among numerical variables.}}{11}{figure.caption.13}%
