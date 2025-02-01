@@ -1,0 +1,648 @@
+<html><head><style type="text/css">pre { margin: 1px }
+			.fmt0 {  } /* normal */
+			.fmt1 {  } /* background */
+			.fmt2 { background-color: #ffcabf; } /* line:error */
+			.fmt3 { background-color: #fffbbf; } /* line:warning */
+			.fmt4 { background-color: #bfd6ff; } /* line:badbox */
+			.fmt5 {  } /* line:bookmark */
+			.fmt6 {  } /* line:bookmark0 */
+			.fmt7 {  } /* line:bookmark1 */
+			.fmt8 {  } /* line:bookmark2 */
+			.fmt9 {  } /* line:bookmark3 */
+			.fmt10 {  } /* line:bookmark4 */
+			.fmt11 {  } /* line:bookmark5 */
+			.fmt12 {  } /* line:bookmark6 */
+			.fmt13 {  } /* line:bookmark7 */
+			.fmt14 {  } /* line:bookmark8 */
+			.fmt15 {  } /* line:bookmark9 */
+			.fmt16 { color: #555580; } /* magicComment */
+			.fmt17 { background-color: #a8cf83; } /* commentTodo */
+			.fmt18 { color: #808080; } /* comment */
+			.fmt19 { color: #800000; } /* keyword */
+			.fmt20 { font-weight: 8200;color: #0095ff; } /* extra-keyword */
+			.fmt21 { color: #808000; } /* math-keyword */
+			.fmt22 { border-bottom: 1px solid #0000ff;color: #0000ff; } /* link */
+			.fmt23 { font-weight: 8200;color: #0055ff; } /* align-ampersand */
+			.fmt24 { color: #008080; } /* verbatim */
+			.fmt25 { color: #800000; } /* sweave-block */
+			.fmt26 { font-weight: 8200;color: #0095ff; } /* sweave-delimiter */
+			.fmt27 { color: #800000; } /* pweave-block */
+			.fmt28 { font-weight: 8200;color: #0095ff; } /* pweave-delimiter */
+			.fmt29 { color: #804000; } /* picture */
+			.fmt30 { color: #c06000; } /* picture-keyword */
+			.fmt31 { font-weight: 8200;background-color: #ffff7f; } /* braceMatch */
+			.fmt32 { font-weight: 8200;color: #ffff7f;background-color: #c00000; } /* braceMismatch */
+			.fmt33 { color: #000000;background-color: #ffef0b; } /* search */
+			.fmt34 { color: #008000; } /* numbers */
+			.fmt35 { color: #509600; } /* math-delimiter */
+			.fmt36 { color: #202000; } /* math-text */
+			.fmt37 { color: #ff0000; } /* text */
+			.fmt38 { color: #ff0088; } /* escapeseq */
+			.fmt39 { border-bottom: 1px dashed #ff0000; } /* spellingMistake */
+			.fmt40 { border-bottom: 1px dashed #008000; } /* wordRepetition */
+			.fmt41 { border-bottom: 1px dashed #008000; } /* wordRepetitionLongRange */
+			.fmt42 { text-decoration: line-through; } /* badWord */
+			.fmt43 { border-bottom: 1px dashed #000080; } /* grammarMistake */
+			.fmt44 { background-color: #00ffa0; } /* grammarMistakeSpecial1 */
+			.fmt45 { background-color: #00c0ff; } /* grammarMistakeSpecial2 */
+			.fmt46 { background-color: #00ff00; } /* grammarMistakeSpecial3 */
+			.fmt47 { background-color: #c8ff61; } /* grammarMistakeSpecial4 */
+			.fmt48 { background-color: #ffbf9f; } /* latexSyntaxMistake */
+			.fmt49 { font-style: italic;color: #0000ff; } /* temporaryCodeCompletion */
+			.fmt50 { color: #000080; } /* environment */
+			.fmt51 { color: #008000; } /* referencePresent */
+			.fmt52 { border-bottom: 1px dashed #008000;color: #008000; } /* referenceMissing */
+			.fmt53 { border-bottom: 1px dashed #800080;color: #800080; } /* referenceMultiple */
+			.fmt54 { color: #008000; } /* citationPresent */
+			.fmt55 { border-bottom: 1px dashed #008000;color: #008000; } /* citationMissing */
+			.fmt56 { color: #008000; } /* packagePresent */
+			.fmt57 { border-bottom: 1px dashed #008000;color: #008000; } /* packageMissing */
+			.fmt58 { font-weight: 8200;color: #000000; } /* structure */
+			.fmt59 { background-color: #eeeeff; } /* current */
+			.fmt60 { background-color: #b2d8ff; } /* selection */
+			.fmt61 { background-color: #ffaaaa; } /* replacement */
+			.fmt62 { text-decoration: line-through;background-color: #ffaaaa; } /* diffDelete */
+			.fmt63 { background-color: #aaffaa; } /* diffAdd */
+			.fmt64 { background-color: #ffff50; } /* diffReplace */
+			.fmt65 { background-color: #ddffcc; } /* previewSelection */
+			.fmt66 { font-weight: 8200;color: #0095ff; } /* txs-test */
+			.fmt67 { font-weight: 8200; } /* txs-test-summary */
+			.fmt68 { color: #008000; } /* txs-test-pass */
+			.fmt69 { color: #c00000; } /* txs-test-fail */
+			.fmt70 { color: #ea8800; } /* txs-test-warn */
+			.fmt71 { color: #808000; } /* txs-test-qdebug */
+			.fmt72 { color: #ffa500; } /* dtx:guard */
+			.fmt73 { font-weight: 8200;color: #006400; } /* dtx:macro */
+			.fmt74 { color: #008080; } /* dtx:verbatim */
+			.fmt75 { color: #cc8100; } /* dtx:specialchar */
+			.fmt76 { font-weight: 8200;color: #10c010; } /* dtx:commands */
+			.fmt77 { color: #b200ff; } /* lua:keyword */
+			.fmt78 { color: #808080; } /* lua:comment */
+			.fmt79 { color: #804000; } /* asymptote:block */
+			.fmt80 { color: #800080; } /* asymptote:keyword */
+			.fmt81 { color: #808000; } /* asymptote:type */
+			.fmt82 { color: #008000; } /* asymptote:numbers */
+			.fmt83 { color: #000080; } /* asymptote:string */
+			.fmt84 { color: #808080; } /* asymptote:comment */
+			.fmt85 { color: #808080; } /* qtscript:comment */
+			.fmt86 { color: #008000; } /* qtscript:string */
+			.fmt87 { color: #000080; } /* qtscript:number */
+			.fmt88 { color: #808000; } /* qtscript:keyword */
+			.fmt89 { color: #800000; } /* qtscript:txs-variable */
+			.fmt90 { font-style: italic; } /* qtscript:txs-function */
+			.fmt91 { background-color: #ffff7f; } /* preedit */
+		</style></head><body><pre><span class="fmt19">\documentclass</span>[12pt,a4paper]{<span class="fmt57">style</span>} </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%%%%%%%%%</span><span class="fmt18"> </span><span class="fmt18">Preamble</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">used</span><span class="fmt18"> </span><span class="fmt18">for</span><span class="fmt18"> </span><span class="fmt18">figures:</span> </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt56">graphicx</span>} </pre>
+		<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">math</span><span class="fmt18"> </span><span class="fmt18">fonts</span><span class="fmt18"> </span><span class="fmt18">etc.:</span> </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt56">amsmath</span>,<span class="fmt56">amsfonts</span>,<span class="fmt56">amsthm</span>,<span class="fmt56">latexsym</span>,<span class="fmt56">amssymb</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt56">pdfpages</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt56">caption</span>,<span class="fmt56">subcaption</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt56">hyperref</span>} </pre>
+		<pre><span class="fmt19">\hypersetup</span>{ </pre>
+		<pre>	colorlinks, </pre>
+		<pre>	citecolor=black, </pre>
+		<pre>	filecolor=black, </pre>
+		<pre>	linkcolor=blue, </pre>
+		<pre>	urlcolor=black </pre>
+		<pre>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt56">wrapfig</span>} </pre>
+		<pre><span class="fmt19">\setlength\intextsep</span>{2pt} <span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">avoid</span><span class="fmt18"> </span><span class="fmt18">too</span><span class="fmt18"> </span><span class="fmt18">much</span><span class="fmt18"> </span><span class="fmt18">space</span><span class="fmt18"> </span><span class="fmt18">around</span><span class="fmt18"> </span><span class="fmt18">figure</span><span class="fmt18"> </span><span class="fmt18">(can</span><span class="fmt18"> </span><span class="fmt18">be</span><span class="fmt18"> </span><span class="fmt18">set</span><span class="fmt18"> </span><span class="fmt18">to</span><span class="fmt18"> </span><span class="fmt18">0pt</span><span class="fmt18"> </span><span class="fmt18">at</span><span class="fmt18"> </span><span class="fmt18">maximum)</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt19">\graphicspath</span>{ {figures/} } </pre>
+		<pre><span class="fmt18">%%%%%%%%%%</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">document</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt19">\tableofcontents</span> </pre>
+		<pre>	<span class="fmt19">\listoffigures</span> </pre>
+		<pre>	<span class="fmt19">\newpage</span> </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">center</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\textcolor</span>{orange}{<span class="fmt19">\Large</span> {<span class="fmt19">\bf</span>{Car accidents case study}}} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">center</span></span><span class="fmt20">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt20">\section</span>{<span class="fmt58">Business</span><span class="fmt58"> </span><span class="fmt58">context</span>} </pre>
+		<pre>Car crashes are a leading cause of injury and death worldwide, making the improvement of vehicle safety a critical concern for car manufacturers. With advancements in technology and engineering, <span class="fmt41">manufacturers</span> are continuously seeking ways to design safer vehicles to reduce fatalities and severe injuries in the event of a crash. Despite these efforts, understanding the precise factors that contribute to survival in car crashes remains a complex challenge. </pre>
+		<pre> </pre>
+		<pre>The problem arises from the nature of car accidents, where various elements such as impact speed, the use of safety features, the type of collision, and the demographics of <span class="fmt40">the</span> occupants all play significant roles. Each crash is unique, and even minor variations can significantly affect the outcome for <span class="fmt40">the</span> occupants. This complexity necessitates a detailed analysis to identify which factors are most influential in determining survival outcomes. Solving the problem of car crash <span class="fmt41">survival</span> is essential for several reasons: </pre>
+		<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">itemize</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt19">\item</span> Safety Regulations: Enhanced understanding of crash dynamics informs the development of stricter safety regulations and standards, ensuring that all vehicles on the road meet minimum safety requirements. </pre>
+		<pre>	<span class="fmt19">\item</span> Design Improvements: Insights from crash data drive innovations in vehicle design, leading to the creation of safer cars that better protect occupants during accidents. </pre>
+		<pre>	<span class="fmt19">\item</span> Public Health: Reducing fatalities and severe injuries from car crashes has a significant impact on public health, decreasing the burden on healthcare systems and improving overall community well-being. </pre>
+		<pre>	<span class="fmt19">\item</span> Consumer Confidence: As manufacturers improve vehicle safety, <span class="fmt41">consumer</span> <span class="fmt41">confidence</span> in the automotive industry increases. Buyers are more likely to invest in vehicles that are proven to offer better protection in the event of a crash. </pre>
+		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">itemize</span></span><span class="fmt20">}</span> </pre>
+		<pre>Over the last year, the Department of Road Transport has witnessed a 15<span class="fmt19">\%</span> year-over-year rise in the number of car crashes happening in urban areas. While they have identified the causes of these accidents post-<span class="fmt39">facto</span>, their goal is to preempt the risk and increase road safety. </pre>
+		<pre> </pre>
+		<pre>We have been hired as data scientists and provided with a sample of historical car crash data spanning five years. This <span class="fmt39">dataset</span> includes various attributes of the cars and <span class="fmt40">the</span> occupants relevant to the crashes. Our objective is to analyze this data, identify patterns in car crashes, and build a predictive model to determine the likelihood of survival in car crashes based on these factors. Additionally, we aim to identify the most critical <span class="fmt41">factors</span> that influence survival outcomes. This analysis will help the department develop necessary safety regulations that must be adopted by all vehicle manufacturers and users. </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt20">\section</span>{<span class="fmt58">Exploratory</span><span class="fmt58"> </span><span class="fmt58">data</span><span class="fmt58"> </span><span class="fmt58">analysis</span>} </pre>
+		<pre>	<span class="fmt20">\subsection</span>{<span class="fmt58">Data</span><span class="fmt58"> </span><span class="fmt58">set</span><span class="fmt58"> </span><span class="fmt58">description</span>} </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt19">\includegraphics</span>[width=0.85<span class="fmt19">\textwidth</span>]{dataset.png} </pre>
+		<pre>		<span class="fmt19">\caption</span>{A snapshot of data set used for analysis.} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:dataset</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre>The <span class="fmt39">dataset</span> provided gives detailed information on automobile accidents, with each row representing a different case. Here are the key points: </pre>
+		<pre> </pre>
+		<pre>Accident Details: Includes speed range, vehicle weight, and whether the impact was frontal. </pre>
+		<pre>Driver Information: Records the sex and age of the <span class="fmt41">driver</span>, as well <span class="fmt40">as</span> <span class="fmt39">seatbelt</span> usage. </pre>
+		<pre>Vehicle Information: Contains the year of <span class="fmt40">the</span> accident and <span class="fmt40">the</span> model year of the vehicle. </pre>
+		<pre>Outcome: Indicates if an airbag was deployed and whether the occupant was released from the hospital or deceased. </pre>
+		<pre> </pre>
+		<pre>The description of each field is as follows :  </pre>
+		<pre><span class="fmt39">caseid</span>: A unique identifier for each accident case. </pre>
+		<pre><span class="fmt39">speed\_range</span>: The speed range of the vehicle at <span class="fmt40">the</span> time of <span class="fmt40">the</span> accident (e.g., 55+ km/h, 25-39 km/h). </pre>
+		<pre>weight: The <span class="fmt40">weight</span> of <span class="fmt40">the</span> vehicle involved in the accident. </pre>
+		<pre><span class="fmt39">seatbelt</span>: Indicates whether the occupant was using a <span class="fmt41"><span class="fmt39">seatbelt</span></span> (e.g., belted, none). </pre>
+		<pre><span class="fmt39">frontal\_impact</span>: A binary indicator showing if the <span class="fmt41">impact</span> was frontal (1 for yes, 0 <span class="fmt40">for</span> no). </pre>
+		<pre><span class="fmt39">sex\_of\_driver</span>: The gender of <span class="fmt40">the</span> <span class="fmt41">driver</span> (e.g., m for male, f for female). </pre>
+		<pre><span class="fmt39">age\_of\_occ</span>: The age of <span class="fmt40">the</span> occupant at <span class="fmt40">the</span> time of <span class="fmt40">the</span> accident. </pre>
+		<pre><span class="fmt39">year\_of\_acc</span>: The year when <span class="fmt40">the</span> <span class="fmt41">accident</span> occurred. </pre>
+		<pre><span class="fmt39">model\_year</span>: The model year of the vehicle involved in the accident. </pre>
+		<pre>airbag: Indicates whether the <span class="fmt41">airbag</span> was deployed (e.g., deploy, <span class="fmt39">nodeploy</span>). </pre>
+		<pre><span class="fmt39">occ\_role</span>: The <span class="fmt40">role</span> of <span class="fmt40">the</span> occupant in <span class="fmt40">the</span> vehicle (e.g., driver, passenger). </pre>
+		<pre>deceased: Indicates whether the occupant was <span class="fmt41">deceased</span> as a result of the accident (yes or no). There are total 11,217 records in our <span class="fmt39">dataset</span>. We did not find any irregularities or missing values in the data set, therefore we will move to analysis with out much description of data cleaning and treatment. We created one derived column <span class="fmt39">veh\_usage\_duration</span> to indicate how much time the vehicle had been used before the accident.	 </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.24<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\centering</span> </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=4cm]{deceased_dist.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:deceased_dist</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.24<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\centering</span> </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=4cm]{sex_dist.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:sex_dist</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.24<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\centering</span> </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=4cm]{seatbelt_dist.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:seatbelt_dist</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.24<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\centering</span> </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=4cm]{occ_role_dist.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:occ_role_dist</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.24<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\centering</span> </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=4cm]{frontal_impact_dist.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:frontal_impact_dist</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.35<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\centering</span> </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=7cm]{speed_dist.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:speed_dist</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.35<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\centering</span> </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=5cm]{airbag_dist.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:airbag_dist</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\caption</span>{Distribution of Categorical variables} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:</span><span class="fmt51"> </span><span class="fmt51">Distribution</span><span class="fmt51"> </span><span class="fmt51">of</span><span class="fmt51"> </span><span class="fmt51">Categorcal</span><span class="fmt51"> </span><span class="fmt51">variables</span><span class="fmt51"> </span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>	 </pre>
+		<pre>	Figure <span class="fmt19">\ref</span>{<span class="fmt51">fig:</span><span class="fmt51"> </span><span class="fmt51">Distribution</span><span class="fmt51"> </span><span class="fmt51">of</span><span class="fmt51"> </span><span class="fmt51">Categorcal</span><span class="fmt51"> </span><span class="fmt51">variables</span><span class="fmt51"> </span>} shows the <span class="fmt39">countplots</span> for <span class="fmt40">the</span> <span class="fmt41">distribution</span> of <span class="fmt41">categorical</span> <span class="fmt41">variables.</span> In our data set 89.5 <span class="fmt19">\%</span> of occupants survived the accidents. 53.9<span class="fmt19">\%</span> of <span class="fmt41">occupants</span> are males. Around 30<span class="fmt19">\%</span> of <span class="fmt41">occupants</span> were not belted while the accidents occurred. More than 70<span class="fmt19">\%</span> of the occupants are drivers. Among the accidents more than 64 <span class="fmt19">\%</span> of <span class="fmt41">occupants</span> had a frontal impact injury. Approximately 39<span class="fmt19">\%</span> of vehicles were traveling at speeds exceeding 25 km/h, while 7<span class="fmt19">\%</span> were moving at <span class="fmt41">speeds</span> over 55 km/h.In over 60<span class="fmt19">\%</span> of cases, the airbag either did not deploy or was unavailable. </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.495<span class="fmt19">\linewidth</span>} </pre>
+		<pre>			<span class="fmt19">\centering</span> </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\linewidth</span>]{veh_duration_dist.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{Histogram and <span class="fmt39">boxplot</span> of vehicle usage duration} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:veh_duration_dist</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.495<span class="fmt19">\linewidth</span>} </pre>
+		<pre>			<span class="fmt19">\centering</span> </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\linewidth</span>]{age_dist.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{<span class="fmt41">Histogram</span> and <span class="fmt41"><span class="fmt39">boxplot</span></span> of person's age} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:age_dist</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\caption</span>{Distribution of numerical variables} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:</span><span class="fmt51"> </span><span class="fmt51">Distribution</span><span class="fmt51"> </span><span class="fmt51">of</span><span class="fmt51"> </span><span class="fmt51">numerical</span><span class="fmt51"> </span><span class="fmt51">variables</span><span class="fmt51"> </span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre>Figure  <span class="fmt19">\ref</span>{<span class="fmt51">fig:</span><span class="fmt51"> </span><span class="fmt51">Distribution</span><span class="fmt51"> </span><span class="fmt51">of</span><span class="fmt51"> </span><span class="fmt51">numerical</span><span class="fmt51"> </span><span class="fmt51">variables</span><span class="fmt51"> </span>} shows <span class="fmt41">distribution</span> of <span class="fmt41">numerical</span> <span class="fmt41">variables.</span> We observe in <span class="fmt41">figure</span> <span class="fmt19">\ref</span>{<span class="fmt51">fig:veh_duration_dist</span>}, the median usage of vehicles before accidents is around 7 years. Figure <span class="fmt19">\ref</span>{<span class="fmt51">fig:age_dist</span>} shows the distribution of age <span class="fmt40">of</span> occupants. The median age is around 32 and 75 <span class="fmt19">\%</span> of <span class="fmt41">occupants</span> have age less than 50.   </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>	<span class="fmt19">\centering</span> </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.32<span class="fmt19">\textwidth</span>} </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{speed_range_stack_deceased.png} </pre>
+		<pre>		<span class="fmt19">\caption</span>{} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:speed_range_stack_deceased</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt19">\hfill</span> </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.32<span class="fmt19">\textwidth</span>} </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{seat_belt_stack_deceased.png} </pre>
+		<pre>		<span class="fmt19">\caption</span>{} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:seat_belt_stack_deceased</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt19">\hfill</span> </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.32<span class="fmt19">\textwidth</span>} </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{fontal_impact_stack_deceased.png} </pre>
+		<pre>		<span class="fmt19">\caption</span>{} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:fontal_impact_stack_deceased</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt19">\hfill</span> </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.32<span class="fmt19">\textwidth</span>} </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{sex_stack_deceaed.png} </pre>
+		<pre>		<span class="fmt19">\caption</span>{} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:sex_stack_deceaed</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt19">\hfill</span> </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.32<span class="fmt19">\textwidth</span>} </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{airbag_stack_deceased.png} </pre>
+		<pre>		<span class="fmt19">\caption</span>{} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:airbag_stack_deceased</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt19">\hfill</span> </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.33<span class="fmt19">\textwidth</span>} </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{occ_role_stack_deceased.png} </pre>
+		<pre>		<span class="fmt19">\caption</span>{} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:occ_role_stack_deceased</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\caption</span>{Stack plot distribution of categorical variables with respect target.} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:stackplot_wrt_target</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre>Figure <span class="fmt19">\ref</span>{<span class="fmt51">fig:stackplot_wrt_target</span>} shows stack plot of <span class="fmt41">categorical</span> <span class="fmt41">variables</span> with <span class="fmt41">respect</span> to target(deceased). The stack plot for speed range <span class="fmt19">\ref</span>{<span class="fmt51">fig:speed_range_stack_deceased</span>} shows the distribution of deceased individuals across different speed ranges at the time of <span class="fmt40">the</span> crash. Higher speeds typically correlate with a <span class="fmt41">higher</span> number of fatalities, indicating the critical impact of speed on crash severity. </pre>
+		<pre> </pre>
+		<pre>The plot on <span class="fmt19">\ref</span>{<span class="fmt51">fig:seat_belt_stack_deceased</span>} illustrates the relationship between seat belt usage and fatalities. It shows a higher proportion of deceased individuals not wearing seat belts, emphasizing the importance of seat belt usage in reducing fatalities. </pre>
+		<pre>  </pre>
+		<pre>The stack plot for frontal impact <span class="fmt19">\ref</span>{<span class="fmt51">fig:fontal_impact_stack_deceased</span>} highlights the distribution of fatalities in crashes involving <span class="fmt41">frontal</span> impacts. <span class="fmt40">Frontal</span> <span class="fmt40">impacts</span> are often more severe, leading to a higher number of fatalities compared to other types of impacts. </pre>
+		<pre> </pre>
+		<pre>The plot on figure <span class="fmt19">\ref</span>{<span class="fmt51">fig:sex_stack_deceaed</span>} shows the distribution of deceased individuals by sex. It reveals that there is a slight difference in fatalities between males and females(males have slightly more <span class="fmt41">fatalities</span>), which could be due to various factors such as driving behavior or exposure risk etc. </pre>
+		<pre> </pre>
+		<pre>The stack plot for airbag deployment on figure <span class="fmt19">\ref</span>{<span class="fmt51">fig:airbag_stack_deceased</span>} indicates the effectiveness of airbags in preventing fatalities. A lower proportion of deceased individuals in crashes where airbags deployed successfully would suggest their crucial role in saving lives. </pre>
+		<pre> </pre>
+		<pre>The plot on figure <span class="fmt19">\ref</span>{<span class="fmt51">fig:occ_role_stack_deceased</span>} shows the distribution of fatalities based on the role of <span class="fmt40">the</span> occupant (e.g., driver, front passenger, rear <span class="fmt40">passenger</span>). It helps identify which positions in the vehicle are more vulnerable during crashes. As per this plot we find that passengers are more prone to severity than drivers most likely because passenger seats are usually not equipped with high efficient airbags compared to front driver seats. </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.495<span class="fmt19">\linewidth</span>} </pre>
+		<pre>			<span class="fmt19">\centering</span> </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\linewidth</span>]{weight_target.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{<span class="fmt39">Boxplot</span> of deceased with respect to weight factor.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:weight_factor</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.495<span class="fmt19">\linewidth</span>} </pre>
+		<pre>			<span class="fmt19">\centering</span> </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\linewidth</span>]{age_of_occ_wrt_target.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{<span class="fmt39"><span class="fmt41">Boxplot</span></span> of <span class="fmt41">deceased</span> with <span class="fmt41">respect</span> to person's age} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:age_factor</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\caption</span>{Distribution showing role of age and weight factor in deceased cases.} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:Distribution</span><span class="fmt51"> </span><span class="fmt51">showing</span><span class="fmt51"> </span><span class="fmt51">role</span><span class="fmt51"> </span><span class="fmt51">of</span><span class="fmt51"> </span><span class="fmt51">age</span><span class="fmt51"> </span><span class="fmt51">and</span><span class="fmt51"> </span><span class="fmt51">weight</span><span class="fmt51"> </span><span class="fmt51">factor</span><span class="fmt51"> </span><span class="fmt51">in</span><span class="fmt51"> </span><span class="fmt51">deceased</span><span class="fmt51"> </span><span class="fmt51">cases.</span><span class="fmt51"> </span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.495<span class="fmt19">\linewidth</span>} </pre>
+		<pre>			<span class="fmt19">\centering</span> </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\linewidth</span>]{veh_usage_dur_wrt_target.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{<span class="fmt39">Boxplot</span> of <span class="fmt41">deceased</span> with respect to vehicle usage duration.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:veh_usage_dur_wrt_target.png</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.495<span class="fmt19">\linewidth</span>} </pre>
+		<pre>			<span class="fmt19">\centering</span> </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\linewidth</span>]{corr.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{Plot showing correlation among numerical variables.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:corrt</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\caption</span>{} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:veh_usage_dur_wrt_target</span><span class="fmt51"> </span><span class="fmt51">and</span><span class="fmt51"> </span><span class="fmt51">corr</span><span class="fmt51"> </span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	 </pre>
+		<pre>The plot on figure <span class="fmt19">\ref</span>{<span class="fmt51">fig:corrt</span>} shows the correlation between numerical variables. The off-diagonal elements indicate very weak correlations <span class="fmt41">between</span> different <span class="fmt41">variables.</span> The <span class="fmt40">variables</span> weight, <span class="fmt39">age\_of\_occ</span>, and <span class="fmt39">veh\_usage\_duration</span> are largely independent of each other, as indicated by the near-zero correlation values. </pre>
+		<pre>	<span class="fmt18">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span> </pre>
+		<pre>	<span class="fmt20">\section</span>{<span class="fmt58"><span class="fmt39">DataPreprocessing</span></span>} </pre>
+		<pre>	Outliers are data points within a <span class="fmt39">dataset</span> that deviate significantly from the majority—they are either much larger or <span class="fmt40">much</span> smaller than the other values. We have checked the outliers present in the given data set using the <span class="fmt39">boxplots</span>. <span class="fmt40">The</span> <span class="fmt39">dataset</span> contains several outliers. Since these are genuine values, we have decided not to remove or adjust them, and will keep them as they are.  </pre>
+		<pre>	 </pre>
+		<pre>	Feature scaling is a crucial data <span class="fmt39">preprocessing</span> technique that standardizes the values of features or variables within a <span class="fmt39">dataset</span>, ensuring they are on a similar scale. This process prevents larger values from disproportionately influencing the model. It's particularly important in datasets with features that vary widely in range, as such variation can lead to biased performance or learning difficulties. </pre>
+		<pre>	 </pre>
+		<pre>	We can achieve this by using the <span class="fmt39">StandardScaler</span>, which standardizes the data so that the mean of each feature becomes zero and the standard deviation <span class="fmt41">becomes</span> one. After applying the <span class="fmt39">StandardScaler</span>, all features will be on the same scale, allowing us to proceed with model building. </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt19">\includegraphics</span>[width=0.5<span class="fmt19">\textwidth</span>]{train_test_split.png} </pre>
+		<pre>		<span class="fmt19">\caption</span>{Train and Test data set split} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:dataset_split</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt20">\section</span>{<span class="fmt58">Analysis</span><span class="fmt58"> </span><span class="fmt58">with</span><span class="fmt58"> </span><span class="fmt58">ML</span><span class="fmt58"> </span><span class="fmt58">Models</span>} </pre>
+		<pre>	In this section we have implemented following ML models to address the classification problem in our data set : Logistic regression, <span class="fmt39">KNN</span>, Naive Bayes and Decision Trees. But before we describe the implemented models, we should reflect on our motivation behind how we evaluate these models pertaining to the business problem at our hand. We want to predict the defaulters/deceased cases with as much efficiently <span class="fmt40">as</span> possible because catching these vulnerable cases will save lives. We observed that only 10 <span class="fmt19">\%</span> of the data set has deceased or defaulter. So even if we predict all the data set as non-defaulter/negatives, then also we would get 90 <span class="fmt19">\%</span> accuracy. Hence total model <span class="fmt41">accuracy</span> is not a good measure of model performance. Instead we should focus on Recall - It gives the ratio of True positives to Actual <span class="fmt40">positives</span>, so high Recall implies low false negatives, i.e. low chances of predicting a defaulter as non <span class="fmt40">defaulter</span>. That is what we have followed to tune our models and maximize the Recall.    </pre>
+		<pre>	<span class="fmt20">\subsection</span>{<span class="fmt58">Logistic</span><span class="fmt58"> </span><span class="fmt58">Regression</span>} </pre>
+		<pre>	Logistic regression is a fundamental statistical method used in machine learning for binary classification tasks. It models the probability that a given input belongs to a particular class. Unlike linear regression, which predicts continuous outcomes, logistic <span class="fmt41">regression</span> <span class="fmt41">predicts</span> discrete <span class="fmt41">outcomes</span> by applying a <span class="fmt41">logistic</span> function to the linear combination of input features. This <span class="fmt41">function</span>, also known as the <span class="fmt39">sigmoid</span> <span class="fmt41">function</span>, maps predicted values to probabilities between 0 and 1. </pre>
+		<pre>	More precisely we carry out a linear model for the log of odds <span class="fmt40">of</span> the event y=1 and features X. Suppose probability of y=1 is <span class="fmt35">$</span><span class="fmt34">f_{w,b}</span><span class="fmt35">$</span> , then the model is : </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">equation</span></span><span class="fmt20">}</span> </pre>
+		<pre><span class="fmt34">		</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\log</span></span></span><span class="fmt34">{</span><span class="fmt21"><span class="fmt34"><span class="fmt21">\left</span></span></span><span class="fmt21"><span class="fmt34">(</span></span><span class="fmt19"><span class="fmt34"><span class="fmt21">\frac</span></span></span><span class="fmt34">{f_{w,b}}{1-f_{w,b}}</span><span class="fmt21"><span class="fmt34"><span class="fmt21">\right</span></span></span><span class="fmt21"><span class="fmt34">)</span></span><span class="fmt34">}</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt34">w_1</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\times</span></span></span><span class="fmt34"> </span><span class="fmt34">x_1</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">....</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">w_k</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\times</span></span></span><span class="fmt34"> </span><span class="fmt34">x_2</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">b</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\boldsymbol</span></span></span><span class="fmt34">{W.X}</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34"><span class="fmt40">b</span></span> </pre>
+		<pre><span class="fmt34">	</span><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">equation</span></span><span class="fmt20">}</span>  </pre>
+		<pre>	From this coefficients  we can compute the probabilities as (which comes out s the <span class="fmt39">sigmoid</span> function): </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">equation</span></span><span class="fmt20">}</span> </pre>
+		<pre><span class="fmt34">		</span><span class="fmt34">f_{w,b}(X)=</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\frac</span></span></span><span class="fmt34">{1}{1+</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\exp</span></span></span><span class="fmt34">{(w.X+b)}}</span> </pre>
+		<pre><span class="fmt34">	</span><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">equation</span></span><span class="fmt20">}</span> </pre>
+		<pre>	The coefficients are computed by the optimization of log <span class="fmt39">liklihood</span>(<span class="fmt35">$</span><span class="fmt34">L_{w,b}</span><span class="fmt35">$</span>) estimation/probability. So the cost function is : </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">equation</span></span><span class="fmt20">}</span> </pre>
+		<pre><span class="fmt34">		</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\log</span></span></span><span class="fmt34">{(L_{w,b})}</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\log</span></span></span><span class="fmt34">(</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\Pi</span></span></span><span class="fmt34">_j</span><span class="fmt34"> </span><span class="fmt34">P(y=</span><span class="fmt34"><span class="fmt40">y</span></span><span class="fmt34">_j|X,</span><span class="fmt34"> </span><span class="fmt34">w,</span><span class="fmt34"> </span><span class="fmt34">b))</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\sum</span></span></span><span class="fmt34">_{j=1}^{N}</span><span class="fmt21"><span class="fmt34"><span class="fmt21">\left</span></span></span><span class="fmt21"><span class="fmt34">[</span></span><span class="fmt34"> </span><span class="fmt34">y_j</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\times</span></span></span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\log</span></span></span><span class="fmt34">(f_{w,b}(X))</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">(1-y_j)</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\times</span></span></span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\log</span></span></span><span class="fmt34">(1-f_{w,b}(X))</span><span class="fmt34">  </span><span class="fmt21"><span class="fmt34"><span class="fmt21">\right</span></span></span><span class="fmt21"><span class="fmt34">]</span></span><span class="fmt34"> </span> </pre>
+		<pre><span class="fmt34">	</span><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">equation</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt19">\includegraphics</span>[width=0.8<span class="fmt19">\linewidth</span>]{lg2_summary.png} </pre>
+		<pre>		<span class="fmt19">\caption</span>{Logistic regression model building summary} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:lg2_summary</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	We have used <span class="fmt41">logistic</span> <span class="fmt41">regression</span> from <span class="fmt39">statsmodel</span> library in python.  </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.49<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{lg_base_train_perf.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{Performance on training set.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:lg_base_train_perf</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.49<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{lg_base_test_perf.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{<span class="fmt41">Performance</span> on test set.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:lg_base_test_per</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.5<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{lg_base_c_Matrix_train.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{Confusion matrix on <span class="fmt41">training</span> set.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:lg_base_c_Matrix_train</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.45<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{lg_base_c_Matrix_test.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{<span class="fmt41">Confusion</span> <span class="fmt41">matrix</span> on test set.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:</span><span class="fmt51"> </span><span class="fmt51">lg_base_c_Matrix_test</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\caption</span>{Model performance of Base logistic regression model.} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:Model</span><span class="fmt51"> </span><span class="fmt51">performance</span><span class="fmt51"> </span><span class="fmt51">of</span><span class="fmt51"> </span><span class="fmt51">Base</span><span class="fmt51"> </span><span class="fmt51">logistic</span><span class="fmt51"> </span><span class="fmt51">regression</span><span class="fmt51"> </span><span class="fmt51">model</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	After removing features with high p values, the result summary is shown in figure <span class="fmt19">\ref</span>{<span class="fmt51">fig:lg2_summary</span>}. After this we determined the optimal threshold using <span class="fmt39">ROC</span> Curve. The <span class="fmt41">optimal</span> <span class="fmt41">threshold</span> was found to be 0.11. Using this tuned model the <span class="fmt40">model</span> performance is shown in the figure <span class="fmt19">\ref</span>{<span class="fmt51">fig:Model</span><span class="fmt51"> </span><span class="fmt51">performance</span><span class="fmt51"> </span><span class="fmt51">of</span><span class="fmt51"> </span><span class="fmt51">tuned</span><span class="fmt51"> </span><span class="fmt51">logistic</span><span class="fmt51"> </span><span class="fmt51">regression</span><span class="fmt51"> </span><span class="fmt51">model</span>}. In the training data set we got a Recall of 86.13 <span class="fmt19">\%</span> and in test data 85.47 <span class="fmt19">\%</span>. Since the <span class="fmt39">performnaces</span> are similar in both training and testing we can conclude that there is no over fitting in the model. Using this tuned model we can predict the defaulters with 85.47 <span class="fmt19">\%</span> of recall which is much better than the base model which only had 38<span class="fmt19">\%</span> recall.   </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt19">\includegraphics</span>[width=0.5<span class="fmt19">\linewidth</span>]{roc_auc.png} </pre>
+		<pre>		<span class="fmt19">\caption</span>{<span class="fmt39">ROC</span> <span class="fmt39">AUC</span> curve} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:roc_auc</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt18">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span> </pre>
+		<pre> </pre>
+		<pre> </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.49<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{lg2_train_perf.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{Performance on training set.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:lg2_train_perf</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.49<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{lg2_test_perf.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{<span class="fmt41">Performance</span> on test set.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:lg2_test_per</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.5<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{lg2_c_Matrix_train.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{Confusion matrix on <span class="fmt41">training</span> set.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:lg2_c_Matrix_train</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.45<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{lg2_c_Matrix_test.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{<span class="fmt41">Confusion</span> <span class="fmt41">matrix</span> on test set.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:</span><span class="fmt51"> </span><span class="fmt51">lg2_c_Matrix_test</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\caption</span>{Model performance of tuned logistic regression model.} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:Model</span><span class="fmt51"> </span><span class="fmt51">performance</span><span class="fmt51"> </span><span class="fmt51">of</span><span class="fmt51"> </span><span class="fmt51">tuned</span><span class="fmt51"> </span><span class="fmt51">logistic</span><span class="fmt51"> </span><span class="fmt51">regression</span><span class="fmt51"> </span><span class="fmt51">model</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt19">\clearpage</span> </pre>
+		<pre>	<span class="fmt18">%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span> </pre>
+		<pre>	<span class="fmt20">\subsection</span>{<span class="fmt58">K-Nearest</span><span class="fmt58"> </span><span class="fmt58">Neighbor</span>} </pre>
+		<pre>	The k-nearest neighbors (k-NN) algorithm is a simple yet powerful non-parametric method used for both classification and regression tasks in machine learning. It operates on the principle of proximity, where the classification or prediction for a given data point is determined by the ‘k’ closest training examples in the feature space. </pre>
+		<pre>	<span class="fmt18">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span> </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.49<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{knn3_train_perf.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{Performance on <span class="fmt41">training</span> set.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:knn3_train_perf</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.49<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{knn3_test_perf.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{<span class="fmt41">performance</span> on test set.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:knn3_test_perf</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.5<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{Knn3_c_Matrix_train.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{Confusion matrix on <span class="fmt41">training</span> set.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:Knn3_c_Matrix_train</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.45<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{Knn3_c_Matrix_test.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{<span class="fmt41">Confusion</span> <span class="fmt41">matrix</span> on test set.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:</span><span class="fmt51"> </span><span class="fmt51">Knn3_c_Matrix_test</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\caption</span>{Model performance of <span class="fmt39">KNN</span> model. K=3.} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:</span><span class="fmt51"> </span><span class="fmt51">Distribution</span><span class="fmt51"> </span><span class="fmt51">of</span><span class="fmt51"> </span><span class="fmt51">nmerical</span><span class="fmt51"> </span><span class="fmt51">variables</span><span class="fmt51"> </span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>	 </pre>
+		<pre>	The optimum value of k=3 was found by recording the recall score for values of k from 2 to 20. Even though accuracy is quite good, <span class="fmt39">knn</span> model fails to provide us desired performance in terms of recall score.  </pre>
+		<pre>	<span class="fmt18">%%%%%%%%%%%%%%%%</span><span class="fmt18">	</span> </pre>
+		<pre>	<span class="fmt20">\subsection</span>{<span class="fmt58">Naive</span><span class="fmt58"> </span><span class="fmt58">Bayes</span>} </pre>
+		<pre>	The Naive Bayes classifier is a simple machine learning algorithm used for classification tasks. It is based on Bayes’ Theorem, which describes the probability of an event based on prior knowledge of conditions related to the event. <span class="fmt40">The</span> “naive” aspect of the algorithm comes from its assumption that all features are independent of each other given the class label, which is rarely true in real-world scenarios but simplifies the computation significantly. We carried out the Naive Bayes model from <span class="fmt39">sklearn</span> library. Similar to <span class="fmt39">knn</span> model, Naive Bayes model, although good with accuracy gives poor performance in terms of recall score. The <span class="fmt41">performance</span> on training and test data set is shown in figure <span class="fmt19">\ref</span>{<span class="fmt51">fig:Model</span><span class="fmt51"> </span><span class="fmt51">performance</span><span class="fmt51"> </span><span class="fmt51">Naive</span><span class="fmt51"> </span><span class="fmt51">Bayes</span><span class="fmt51"> </span><span class="fmt51">Classifier.</span>} </pre>
+		<pre>	<span class="fmt18">%%%%%%%</span> </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.49<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{nb_train_perf.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:nb_train_perf</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.49<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{nb_test_perf.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:nb_test_perf</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.5<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{nb_c_Matrix_train.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{Confusion matrix on training set.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:nb_c_Matrix_train</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.45<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{nb_c_Matrix_test.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{<span class="fmt41">Confusion</span> <span class="fmt41">matrix</span> on test set.} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:</span><span class="fmt51"> </span><span class="fmt51">nb_c_Matrix_test</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\caption</span>{Model performance Naive Bayes Classifier.} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:Model</span><span class="fmt51"> </span><span class="fmt51">performance</span><span class="fmt51"> </span><span class="fmt51">Naive</span><span class="fmt51"> </span><span class="fmt51">Bayes</span><span class="fmt51"> </span><span class="fmt51">Classifier.</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>	 </pre>
+		<pre>	<span class="fmt18">%%%%%%</span> </pre>
+		<pre>	<span class="fmt19">\clearpage</span> </pre>
+		<pre>	<span class="fmt20">\subsection</span>{<span class="fmt58">Decision</span><span class="fmt58"> </span><span class="fmt58">Trees</span>} </pre>
+		<pre>	Decision tree classification is a powerful and intuitive machine learning technique used for both classification and regression tasks. It works by recursively splitting the <span class="fmt39">dataset</span> into subsets based on the value of input features, creating a tree-like model of decisions. Each internal node represents a decision point based on a feature, each branch represents the outcome of that decision, and each leaf node represents a class label or a continuous value. The algorithm uses criteria such as <span class="fmt39">Gini</span> impurity, entropy, or information gain to determine the best splits, aiming to create the most homogeneous branches possible. Decision trees are highly <span class="fmt39">interpretable</span>, as the resulting model can be visualized and easily understood, making them particularly useful for explaining predictions. </pre>
+		<pre>	We utilized <span class="fmt39">pre-</span>pruning techniques to enhance the performance of <span class="fmt40">the</span> Decision Tree model. <span class="fmt39">Pre-</span>pruning halted the growth of <span class="fmt40">the</span> <span class="fmt41">decision</span> tree at an earlier stage, preventing the model from becoming overly complex and reducing <span class="fmt39">overfitting</span>. This approach helped the model to generalize better and make more accurate predictions on unseen data. </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.49<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{dTree_base_train_perf.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:dTree_base_train_perf</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.49<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{dTree_base_test_perf.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:Tree_base_test_per</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.47<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{dTree_c_Matrix_train.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:dTree_base_c_Matrix_trai</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.45<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{dTree_c_Matrix_test.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:dTree_base_c_Matrix_test</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\caption</span>{Model Performance of Base Decision Tree grown to full length.} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:Model</span><span class="fmt51"> </span><span class="fmt51">Performance</span><span class="fmt51"> </span><span class="fmt51">of</span><span class="fmt51"> </span><span class="fmt51">Base</span><span class="fmt51"> </span><span class="fmt51">Decision</span><span class="fmt51"> </span><span class="fmt51">Tree</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	To further refine the model, we applied <span class="fmt39">hyperparameter</span> tuning using <span class="fmt39">GridSearchCV</span>. This involved systematically searching through a predefined grid of <span class="fmt39">hyperparameter</span> values and evaluating each combination through cross-validation. By doing so, we aimed to find the optimal parameters that maximize the performance metric, thus improving the model’s generalization and effectiveness. We explored various parameter combinations for the <span class="fmt39">DecisionTreeClassifier</span> from <span class="fmt39">sklearn</span>, including max depth, min samples split, max leaf nodes, and class weight. The goal was to identify the best configuration that delivers superior performance for our <span class="fmt39">dataset</span>. </pre>
+		<pre>	 </pre>
+		<pre>	After conducting the <span class="fmt39">GridSearchCV</span> process, the ideal set of parameters for the <span class="fmt39">DecisionTreeClassifier</span> was determined as follows: </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt19">\includegraphics</span>[width=0.8<span class="fmt19">\linewidth</span>]{Tuned_dtree_classifier} </pre>
+		<pre>		<span class="fmt19">\caption</span>{Decision Tree classifier obtained from <span class="fmt39">GridSearchCV</span> (<span class="fmt39">Pre-</span>pruning).} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:Tuned_dtree_classifiers</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt18">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span> </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.49<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{dTree_train_perf.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:dTree_train_perf</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.49<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{dTree_test_perf.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:Tree_test_per</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.47<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{dTree_c_Matrix_train.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:dTree_c_Matrix_trai</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\hfill</span> </pre>
+		<pre>		<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span>[t]{0.45<span class="fmt19">\textwidth</span>} </pre>
+		<pre>			<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\textwidth</span>]{dTree_c_Matrix_test.png} </pre>
+		<pre>			<span class="fmt19">\caption</span>{} </pre>
+		<pre>			<span class="fmt19">\label</span>{<span class="fmt51">fig:dTree_c_Matrix_test</span>} </pre>
+		<pre>		<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">subfigure</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\caption</span>{Model Performance of Tuned Decision Tree (<span class="fmt39">Pre-</span>pruning).} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:Model</span><span class="fmt51"> </span><span class="fmt51">Performance</span><span class="fmt51"> </span><span class="fmt51">of</span><span class="fmt51"> </span><span class="fmt51">Decision</span><span class="fmt51"> </span><span class="fmt51">Tree</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>	<span class="fmt19">\centering</span> </pre>
+		<pre>	<span class="fmt19">\includegraphics</span>[width=0.7<span class="fmt19">\linewidth</span>]{dTree_vis.png} </pre>
+		<pre>	<span class="fmt19">\caption</span>{<span class="fmt41">Decision</span> Tree visualization of the tuned model. (<span class="fmt39">Pre-</span>pruning)} </pre>
+		<pre>	<span class="fmt19">\label</span>{<span class="fmt51">fig:dTree_vis</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\linewidth</span>,height=9cm]{_feat_importance.png} </pre>
+		<pre>		<span class="fmt19">\caption</span>{Importance of features as inferred from tuned decision tree model (<span class="fmt39">pre-</span>pruning)} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:feat_imp</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	The visualization for <span class="fmt40">the</span> tuned decision tree is shown in figure <span class="fmt19">\ref</span>{<span class="fmt51">fig:dTree_vis</span>}. It has a depth of 6. The feature importance is obtained from this tuned model which is shown in figure <span class="fmt19">\ref</span>{<span class="fmt51">fig:feat_imp</span>}. Weight, speed of vehicle, age, configuration of seat belt and whether there was a frontal impact are most features in deciding survival chances from crash. Having a speed range of 55+ km/h generally associated more with mortality as we had observed during <span class="fmt39">EDA</span>. The weight of <span class="fmt40">the</span> vehicle involved in the accident which turns out to be most important factor has more mortality rate for accident when &lt; 90.5 as observed from the top node of decision tree. So, lighter vehicles are more prone to damages and fatal crashes <span class="fmt40">and</span> associated with higher mortality rate. This is also confirmed from the box plot with respect to weight. Similarly higher age associated more with mortality. </pre>
+		<pre>	<span class="fmt18">%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span><span class="fmt18">	</span> </pre>
+		<pre>	<span class="fmt19">\clearpage</span> </pre>
+		<pre>	<span class="fmt20">\subsection</span>{<span class="fmt58">Final</span><span class="fmt58"> </span><span class="fmt58">Model</span><span class="fmt58"> </span><span class="fmt58">comparison</span>} </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\linewidth</span>]{training_perf_compare.png} </pre>
+		<pre>		<span class="fmt19">\caption</span>{Comparison of base and tuned model performance on training set.} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:training_perf_copmpare</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre> </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span>[h] </pre>
+		<pre>		<span class="fmt19">\centering</span> </pre>
+		<pre>		<span class="fmt19">\includegraphics</span>[width=<span class="fmt19">\linewidth</span>]{test_perf_copmpare.png} </pre>
+		<pre>		<span class="fmt19">\caption</span>{Comparison of base and tuned model performance on test set.} </pre>
+		<pre>		<span class="fmt19">\label</span>{<span class="fmt51">fig:test_perf_copmpare</span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">figure</span></span><span class="fmt20">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">itemize</span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\item</span> Logistic regression accuracy is quite good both on training and testing data set. This signifies good level of generalization. After tuning to find the optimal threshold it show good performance on recall as well. </pre>
+		<pre>		<span class="fmt19">\item</span> Naive <span class="fmt39">bayes</span> and <span class="fmt39">KNN</span> on the <span class="fmt39">otherhand</span> although perform good <span class="fmt39">interms</span> of accuracy in both training and testing, they failed to deliver good performance in terms of recall score. </pre>
+		<pre>		<span class="fmt19">\item</span> Complete Base decision tree severely over fits the training data giving perfect accuracy. But this over fitting is exposed in the performance on testing set which is significantly lower.   </pre>
+		<pre>		<span class="fmt19">\item</span> <span class="fmt39">Pre</span> <span class="fmt39">prunned</span> decision tree performs much better with similar score on training and test data set. This shows good level of generalization. The recall score 0f 85.5 <span class="fmt19">\%</span> is achieved in test set through grid search and cross validation. </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">itemize</span></span><span class="fmt20">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt18">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span> </pre>
+		<pre>	<span class="fmt20">\section</span>{<span class="fmt58">Actionable</span><span class="fmt58"> </span><span class="fmt58">insights</span><span class="fmt58"> </span><span class="fmt58">and</span><span class="fmt58"> </span><span class="fmt58">Recommendations</span>} </pre>
+		<pre>	<span class="fmt20">\subsection</span>{<span class="fmt58">Actionable</span><span class="fmt58"> </span><span class="fmt58">insights</span>} </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">itemize</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt19">\item</span> The analysis reveals that vehicle weight is the most significant factor in determining survival chances in crashes. Lighter vehicles (weighing less than 90.5) are associated with a higher mortality rate. This insight suggests that enhancing the structural integrity of lighter vehicles could potentially reduce fatalities. </pre>
+		<pre>	<span class="fmt19">\item</span> <span class="fmt41">Vehicles</span> traveling at speeds greater than 55 km/h are more likely to be involved in fatal crashes. Implementing stricter speed regulations and promoting safe driving practices at high speeds can significantly enhance survival rates in accidents. </pre>
+		<pre>	<span class="fmt19">\item</span> Higher age is correlated with an increased mortality rate in crashes. This underscores the importance of targeted safety measures for older adults, such as advanced driver assistance systems and age-specific vehicle safety features. </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\item</span> The configuration of seat belts and the occurrence of frontal impacts are critical factors influencing survival chances. Encouraging the use of proper seat belt configurations and enhancing frontal impact safety features in vehicles can improve overall crash <span class="fmt39">survivability</span>. </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\item</span> The analysis shows a slight difference in fatalities between males and females, with males having slightly more fatalities. This could be attributed to factors such as driving behavior or exposure risk, suggesting the need for targeted safety interventions based on gender-specific risk factors. </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\item</span> The distribution of fatalities based on the occupant's role reveals that passengers are more prone to severe outcomes compared to drivers. This is likely due to the lack of high-efficiency airbags in passenger seats. Enhancing safety features for all occupants, including passengers, can reduce the vulnerability in crashes. </pre>
+		<pre>	 </pre>
+		<pre>	 </pre>
+		<pre>		 </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">itemize</span></span><span class="fmt20">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt20">\subsection</span>{<span class="fmt58">Business</span><span class="fmt58"> </span><span class="fmt58">Recommendations</span>} </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">itemize</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt19">\item</span> Focus on innovative materials and structural design improvements for lighter vehicles. Private companies should be encouraged to Allocate a significant portion of the R and D budget to develop stronger, more resilient materials that can enhance the safety of lighter vehicles without significantly increasing their weight. Educate consumers about the enhanced safety features and structural improvements in lighter vehicles. </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\item</span> Advocate for and implement stricter speed limits, especially in high-risk areas where crashes are more frequent. Collaborate with local authorities and law enforcement to ensure compliance and promote safe driving practices. Use technology such as speed cameras and dynamic speed signs to monitor and manage vehicle speeds effectively.  Launch awareness campaigns and educational programs that highlight the risks associated with driving at speeds greater than 55 km/h. Provide resources and training for drivers to adopt safer driving habits, focusing on speed management and defensive <span class="fmt41">driving</span> techniques. </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\item</span> Develop and implement advanced driver assistance systems (ADAS) tailored to the needs of older drivers. These could include features like lane departure warnings, automatic emergency braking, and adaptive cruise control. Additionally, design and promote vehicle safety features that cater specifically to older adults, such as adjustable seat belts and ergonomic controls. </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\item</span> Establish a system for continuous monitoring of crash data and effectiveness of speed regulations and safety measures. Use this data to make informed decisions and implement necessary improvements. </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\item</span> Launch comprehensive awareness campaigns focusing on the importance of using seat belts properly. Provide clear instructions and demonstrations on the correct seat belt usage. Collaborate with automotive manufacturers to include reminders and alerts for proper seat belt configurations in vehicles. </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">itemize</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50"><span class="fmt48">centering</span></span></span><span class="fmt20">}</span> </pre>
+		<pre>		<span class="fmt19">\vspace</span>{20pt} </pre>
+		<pre>		<span class="fmt20">\subsection</span>*{<span class="fmt58">End</span><span class="fmt58"> </span><span class="fmt58">of</span><span class="fmt58"> </span><span class="fmt58">Report</span><span class="fmt19"><span class="fmt58">\\</span></span><span class="fmt58">Submitted</span><span class="fmt58"> </span><span class="fmt58">by</span><span class="fmt58"> </span><span class="fmt58">:</span><span class="fmt58"> </span><span class="fmt58"><span class="fmt39">Haraprasad</span></span><span class="fmt58"> </span><span class="fmt58"><span class="fmt39">Dhal</span></span>} </pre>
+		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50"><span class="fmt48">centering</span></span></span><span class="fmt20">}</span> </pre>
+		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">document</span></span><span class="fmt20">}</span> </pre></body></html>

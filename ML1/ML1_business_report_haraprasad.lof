@@ -1,0 +1,20 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces A snapshot of data set used for analysis.}}{2}{figure.caption.3}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Distribution of Categorical variables}}{3}{figure.caption.4}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Distribution of numerical variables}}{4}{figure.caption.5}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Stack plot distribution of categorical variables with respect target.}}{4}{figure.caption.6}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Distribution showing role of age and weight factor in deceased cases.}}{5}{figure.caption.7}%
+\contentsline {figure}{\numberline {6}{\ignorespaces \relax }}{5}{figure.caption.8}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Train and Test data set split}}{6}{figure.caption.9}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Logistic regression model building summary}}{7}{figure.caption.10}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Model performance of Base logistic regression model.}}{7}{figure.caption.11}%
+\contentsline {figure}{\numberline {10}{\ignorespaces ROC AUC curve}}{8}{figure.caption.12}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Model performance of tuned logistic regression model.}}{8}{figure.caption.13}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Model performance of KNN model. K=3.}}{9}{figure.caption.14}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Model performance Naive Bayes Classifier.}}{10}{figure.caption.15}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Model Performance of Base Decision Tree grown to full length.}}{11}{figure.caption.16}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Decision Tree classifier obtained from GridSearchCV (Pre-pruning).}}{11}{figure.caption.17}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Model Performance of Tuned Decision Tree (Pre-pruning).}}{12}{figure.caption.18}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Decision Tree visualization of the tuned model. (Pre-pruning)}}{13}{figure.caption.19}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Importance of features as inferred from tuned decision tree model (pre-pruning)}}{13}{figure.caption.20}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Comparison of base and tuned model performance on training set.}}{14}{figure.caption.21}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Comparison of base and tuned model performance on test set.}}{14}{figure.caption.22}%

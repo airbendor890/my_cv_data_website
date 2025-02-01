@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>c20bd87a9bfc41df86dc4d7da24acaec</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="center">
+<p><span style="color: orange"><span><strong><span>Car accidents case
+study</span></strong></span></span></p>
+</div>
+<h1 id="business-context">Business context</h1>
+<p>Car crashes are a leading cause of injury and death worldwide, making
+the improvement of vehicle safety a critical concern for car
+manufacturers. With advancements in technology and engineering,
+manufacturers are continuously seeking ways to design safer vehicles to
+reduce fatalities and severe injuries in the event of a crash. Despite
+these efforts, understanding the precise factors that contribute to
+survival in car crashes remains a complex challenge.</p>
+<p>The problem arises from the nature of car accidents, where various
+elements such as impact speed, the use of safety features, the type of
+collision, and the demographics of the occupants all play significant
+roles. Each crash is unique, and even minor variations can significantly
+affect the outcome for the occupants. This complexity necessitates a
+detailed analysis to identify which factors are most influential in
+determining survival outcomes. Solving the problem of car crash survival
+is essential for several reasons:</p>
+<ul>
+<li><p>Safety Regulations: Enhanced understanding of crash dynamics
+informs the development of stricter safety regulations and standards,
+ensuring that all vehicles on the road meet minimum safety
+requirements.</p></li>
+<li><p>Design Improvements: Insights from crash data drive innovations
+in vehicle design, leading to the creation of safer cars that better
+protect occupants during accidents.</p></li>
+<li><p>Public Health: Reducing fatalities and severe injuries from car
+crashes has a significant impact on public health, decreasing the burden
+on healthcare systems and improving overall community
+well-being.</p></li>
+<li><p>Consumer Confidence: As manufacturers improve vehicle safety,
+consumer confidence in the automotive industry increases. Buyers are
+more likely to invest in vehicles that are proven to offer better
+protection in the event of a crash.</p></li>
+</ul>
+<p>Over the last year, the Department of Road Transport has witnessed a
+15% year-over-year rise in the number of car crashes happening in urban
+areas. While they have identified the causes of these accidents
+post-facto, their goal is to preempt the risk and increase road
+safety.</p>
+<p>We have been hired as data scientists and provided with a sample of
+historical car crash data spanning five years. This dataset includes
+various attributes of the cars and the occupants relevant to the
+crashes. Our objective is to analyze this data, identify patterns in car
+crashes, and build a predictive model to determine the likelihood of
+survival in car crashes based on these factors. Additionally, we aim to
+identify the most critical factors that influence survival outcomes.
+This analysis will help the department develop necessary safety
+regulations that must be adopted by all vehicle manufacturers and
+users.</p>
+<h1 id="exploratory-data-analysis">Exploratory data analysis</h1>
+<h2 id="data-set-description">Data set description</h2>
+<figure>
+<img src="dataset.png" id="fig:dataset" style="width:85.0%"
+alt="A snapshot of data set used for analysis." />
+<figcaption aria-hidden="true">A snapshot of data set used for
+analysis.</figcaption>
+</figure>
+<p>The dataset provided gives detailed information on automobile
+accidents, with each row representing a different case. Here are the key
+points:</p>
+<p>Accident Details: Includes speed range, vehicle weight, and whether
+the impact was frontal. Driver Information: Records the sex and age of
+the driver, as well as seatbelt usage. Vehicle Information: Contains the
+year of the accident and the model year of the vehicle. Outcome:
+Indicates if an airbag was deployed and whether the occupant was
+released from the hospital or deceased.</p>
+<p>The description of each field is as follows : caseid: A unique
+identifier for each accident case. speed_range: The speed range of the
+vehicle at the time of the accident (e.g., 55+ km/h, 25-39 km/h).
+weight: The weight of the vehicle involved in the accident. seatbelt:
+Indicates whether the occupant was using a seatbelt (e.g., belted,
+none). frontal_impact: A binary indicator showing if the impact was
+frontal (1 for yes, 0 for no). sex_of_driver: The gender of the driver
+(e.g., m for male, f for female). age_of_occ: The age of the occupant at
+the time of the accident. year_of_acc: The year when the accident
+occurred. model_year: The model year of the vehicle involved in the
+accident. airbag: Indicates whether the airbag was deployed (e.g.,
+deploy, nodeploy). occ_role: The role of the occupant in the vehicle
+(e.g., driver, passenger). deceased: Indicates whether the occupant was
+deceased as a result of the accident (yes or no). There are total 11,217
+records in our dataset. We did not find any irregularities or missing
+values in the data set, therefore we will move to analysis with out much
+description of data cleaning and treatment. We created one derived
+column veh_usage_duration to indicate how much time the vehicle had been
+used before the accident.</p>
+<figure>
+<img src="deceased_dist.png" id="fig:deceased_dist" style="width:4cm" />
+</figure>
+<figure>
+<img src="sex_dist.png" id="fig:sex_dist" style="width:4cm" />
+</figure>
+<figure>
+<img src="seatbelt_dist.png" id="fig:seatbelt_dist" style="width:4cm" />
+</figure>
+<figure>
+<img src="occ_role_dist.png" id="fig:occ_role_dist" style="width:4cm" />
+</figure>
+<figure>
+<img src="frontal_impact_dist.png" id="fig:frontal_impact_dist"
+style="width:4cm" />
+</figure>
+<figure>
+<img src="speed_dist.png" id="fig:speed_dist" style="width:7cm" />
+</figure>
+<figure>
+<img src="airbag_dist.png" id="fig:airbag_dist" style="width:5cm" />
+</figure>
+<p>Figure <a href="#fig: Distribution of Categorcal variables "
+data-reference-type="ref"
+data-reference="fig: Distribution of Categorcal variables ">[fig:
+Distribution of Categorcal variables ]</a> shows the countplots for the
+distribution of categorical variables. In our data set 89.5 % of
+occupants survived the accidents. 53.9% of occupants are males. Around
+30% of occupants were not belted while the accidents occurred. More than
+70% of the occupants are drivers. Among the accidents more than 64 % of
+occupants had a frontal impact injury. Approximately 39% of vehicles
+were traveling at speeds exceeding 25 km/h, while 7% were moving at
+speeds over 55 km/h.In over 60% of cases, the airbag either did not
+deploy or was unavailable.</p>
+<figure>
+<img src="veh_duration_dist.png" id="fig:veh_duration_dist"
+alt="Histogram and boxplot of vehicle usage duration" />
+<figcaption aria-hidden="true">Histogram and boxplot of vehicle usage
+duration</figcaption>
+</figure>
+<figure>
+<img src="age_dist.png" id="fig:age_dist"
+alt="Histogram and boxplot of person’s age" />
+<figcaption aria-hidden="true">Histogram and boxplot of person’s
+age</figcaption>
+</figure>
+<p>Figure <a href="#fig: Distribution of numerical variables "
+data-reference-type="ref"
+data-reference="fig: Distribution of numerical variables ">[fig:
+Distribution of numerical variables ]</a> shows distribution of
+numerical variables. We observe in figure <a
+href="#fig:veh_duration_dist" data-reference-type="ref"
+data-reference="fig:veh_duration_dist">9</a>, the median usage of
+vehicles before accidents is around 7 years. Figure <a
+href="#fig:age_dist" data-reference-type="ref"
+data-reference="fig:age_dist">10</a> shows the distribution of age of
+occupants. The median age is around 32 and 75 % of occupants have age
+less than 50.</p>
+<figure>
+<img src="speed_range_stack_deceased.png"
+id="fig:speed_range_stack_deceased" />
+</figure>
+<figure>
+<img src="seat_belt_stack_deceased.png"
+id="fig:seat_belt_stack_deceased" />
+</figure>
+<figure>
+<img src="fontal_impact_stack_deceased.png"
+id="fig:fontal_impact_stack_deceased" />
+</figure>
+<figure>
+<img src="sex_stack_deceaed.png" id="fig:sex_stack_deceaed" />
+</figure>
+<figure>
+<img src="airbag_stack_deceased.png" id="fig:airbag_stack_deceased" />
+</figure>
+<figure>
+<img src="occ_role_stack_deceased.png"
+id="fig:occ_role_stack_deceased" />
+</figure>
+<p>Figure <a href="#fig:stackplot_wrt_target" data-reference-type="ref"
+data-reference="fig:stackplot_wrt_target">[fig:stackplot_wrt_target]</a>
+shows stack plot of categorical variables with respect to
+target(deceased). The stack plot for speed range <a
+href="#fig:speed_range_stack_deceased" data-reference-type="ref"
+data-reference="fig:speed_range_stack_deceased">11</a> shows the
+distribution of deceased individuals across different speed ranges at
+the time of the crash. Higher speeds typically correlate with a higher
+number of fatalities, indicating the critical impact of speed on crash
+severity.</p>
+<p>The plot on <a href="#fig:seat_belt_stack_deceased"
+data-reference-type="ref"
+data-reference="fig:seat_belt_stack_deceased">12</a> illustrates the
+relationship between seat belt usage and fatalities. It shows a higher
+proportion of deceased individuals not wearing seat belts, emphasizing
+the importance of seat belt usage in reducing fatalities.</p>
+<p>The stack plot for frontal impact <a
+href="#fig:fontal_impact_stack_deceased" data-reference-type="ref"
+data-reference="fig:fontal_impact_stack_deceased">13</a> highlights the
+distribution of fatalities in crashes involving frontal impacts. Frontal
+impacts are often more severe, leading to a higher number of fatalities
+compared to other types of impacts.</p>
+<p>The plot on figure <a href="#fig:sex_stack_deceaed"
+data-reference-type="ref" data-reference="fig:sex_stack_deceaed">14</a>
+shows the distribution of deceased individuals by sex. It reveals that
+there is a slight difference in fatalities between males and
+females(males have slightly more fatalities), which could be due to
+various factors such as driving behavior or exposure risk etc.</p>
+<p>The stack plot for airbag deployment on figure <a
+href="#fig:airbag_stack_deceased" data-reference-type="ref"
+data-reference="fig:airbag_stack_deceased">15</a> indicates the
+effectiveness of airbags in preventing fatalities. A lower proportion of
+deceased individuals in crashes where airbags deployed successfully
+would suggest their crucial role in saving lives.</p>
+<p>The plot on figure <a href="#fig:occ_role_stack_deceased"
+data-reference-type="ref"
+data-reference="fig:occ_role_stack_deceased">16</a> shows the
+distribution of fatalities based on the role of the occupant (e.g.,
+driver, front passenger, rear passenger). It helps identify which
+positions in the vehicle are more vulnerable during crashes. As per this
+plot we find that passengers are more prone to severity than drivers
+most likely because passenger seats are usually not equipped with high
+efficient airbags compared to front driver seats.</p>
+<figure>
+<img src="weight_target.png" id="fig:weight_factor"
+alt="Boxplot of deceased with respect to weight factor." />
+<figcaption aria-hidden="true">Boxplot of deceased with respect to
+weight factor.</figcaption>
+</figure>
+<figure>
+<img src="age_of_occ_wrt_target.png" id="fig:age_factor"
+alt="Boxplot of deceased with respect to person’s age" />
+<figcaption aria-hidden="true">Boxplot of deceased with respect to
+person’s age</figcaption>
+</figure>
+<figure>
+<img src="veh_usage_dur_wrt_target.png"
+id="fig:veh_usage_dur_wrt_target.png"
+alt="Boxplot of deceased with respect to vehicle usage duration." />
+<figcaption aria-hidden="true">Boxplot of deceased with respect to
+vehicle usage duration.</figcaption>
+</figure>
+<figure>
+<img src="corr.png" id="fig:corrt"
+alt="Plot showing correlation among numerical variables." />
+<figcaption aria-hidden="true">Plot showing correlation among numerical
+variables.</figcaption>
+</figure>
+<p>The plot on figure <a href="#fig:corrt" data-reference-type="ref"
+data-reference="fig:corrt">20</a> shows the correlation between
+numerical variables. The off-diagonal elements indicate very weak
+correlations between different variables. The variables weight,
+age_of_occ, and veh_usage_duration are largely independent of each
+other, as indicated by the near-zero correlation values.</p>
+<h1 id="datapreprocessing">DataPreprocessing</h1>
+<p>Outliers are data points within a dataset that deviate significantly
+from the majority—they are either much larger or much smaller than the
+other values. We have checked the outliers present in the given data set
+using the boxplots. The dataset contains several outliers. Since these
+are genuine values, we have decided not to remove or adjust them, and
+will keep them as they are.</p>
+<p>Feature scaling is a crucial data preprocessing technique that
+standardizes the values of features or variables within a dataset,
+ensuring they are on a similar scale. This process prevents larger
+values from disproportionately influencing the model. It’s particularly
+important in datasets with features that vary widely in range, as such
+variation can lead to biased performance or learning difficulties.</p>
+<p>We can achieve this by using the StandardScaler, which standardizes
+the data so that the mean of each feature becomes zero and the standard
+deviation becomes one. After applying the StandardScaler, all features
+will be on the same scale, allowing us to proceed with model
+building.</p>
+<figure>
+<img src="train_test_split.png" id="fig:dataset_split"
+style="width:50.0%" alt="Train and Test data set split" />
+<figcaption aria-hidden="true">Train and Test data set
+split</figcaption>
+</figure>
+<h1 id="analysis-with-ml-models">Analysis with ML Models</h1>
+<p>In this section we have implemented following ML models to address
+the classification problem in our data set : Logistic regression, KNN,
+Naive Bayes and Decision Trees. But before we describe the implemented
+models, we should reflect on our motivation behind how we evaluate these
+models pertaining to the business problem at our hand. We want to
+predict the defaulters/deceased cases with as much efficiently as
+possible because catching these vulnerable cases will save lives. We
+observed that only 10 % of the data set has deceased or defaulter. So
+even if we predict all the data set as non-defaulter/negatives, then
+also we would get 90 % accuracy. Hence total model accuracy is not a
+good measure of model performance. Instead we should focus on Recall -
+It gives the ratio of True positives to Actual positives, so high Recall
+implies low false negatives, i.e. low chances of predicting a defaulter
+as non defaulter. That is what we have followed to tune our models and
+maximize the Recall.</p>
+<h2 id="logistic-regression">Logistic Regression</h2>
+<p>Logistic regression is a fundamental statistical method used in
+machine learning for binary classification tasks. It models the
+probability that a given input belongs to a particular class. Unlike
+linear regression, which predicts continuous outcomes, logistic
+regression predicts discrete outcomes by applying a logistic function to
+the linear combination of input features. This function, also known as
+the sigmoid function, maps predicted values to probabilities between 0
+and 1. More precisely we carry out a linear model for the log of odds of
+the event y=1 and features X. Suppose probability of y=1 is <span
+class="math inline">\(f_{w,b}\)</span> , then the model is : <span
+class="math display">\[\log{\left(\frac{f_{w,b}}{1-f_{w,b}}\right)} =
+w_1\times x_1 + .... + w_k\times x_2 + b = \boldsymbol{W.X} + b\]</span>
+From this coefficients we can compute the probabilities as (which comes
+out s the sigmoid function): <span
+class="math display">\[f_{w,b}(X)=\frac{1}{1+\exp{(w.X+b)}}\]</span> The
+coefficients are computed by the optimization of log liklihood(<span
+class="math inline">\(L_{w,b}\)</span>) estimation/probability. So the
+cost function is : <span class="math display">\[\log{(L_{w,b})} =
+\log(\Pi_j P(y=y_j|X, w, b)) = \sum_{j=1}^{N}\left[ y_j\times
+\log(f_{w,b}(X)) + (1-y_j)\times
+\log(1-f_{w,b}(X))  \right]\]</span></p>
+<figure>
+<img src="lg2_summary.png" id="fig:lg2_summary"
+alt="Logistic regression model building summary" />
+<figcaption aria-hidden="true">Logistic regression model building
+summary</figcaption>
+</figure>
+<p>We have used logistic regression from statsmodel library in
+python.</p>
+<figure>
+<img src="lg_base_train_perf.png" id="fig:lg_base_train_perf"
+alt="Performance on training set." />
+<figcaption aria-hidden="true">Performance on training set.</figcaption>
+</figure>
+<figure>
+<img src="lg_base_test_perf.png" id="fig:lg_base_test_per"
+alt="Performance on test set." />
+<figcaption aria-hidden="true">Performance on test set.</figcaption>
+</figure>
+<figure>
+<img src="lg_base_c_Matrix_train.png" id="fig:lg_base_c_Matrix_train"
+alt="Confusion matrix on training set." />
+<figcaption aria-hidden="true">Confusion matrix on training
+set.</figcaption>
+</figure>
+<figure>
+<img src="lg_base_c_Matrix_test.png" id="fig: lg_base_c_Matrix_test"
+alt="Confusion matrix on test set." />
+<figcaption aria-hidden="true">Confusion matrix on test
+set.</figcaption>
+</figure>
+<p>After removing features with high p values, the result summary is
+shown in figure <a href="#fig:lg2_summary" data-reference-type="ref"
+data-reference="fig:lg2_summary">22</a>. After this we determined the
+optimal threshold using ROC Curve. The optimal threshold was found to be
+0.11. Using this tuned model the model performance is shown in the
+figure <a
+href="#fig:Model performance of tuned logistic regression model"
+data-reference-type="ref"
+data-reference="fig:Model performance of tuned logistic regression model">[fig:Model
+performance of tuned logistic regression model]</a>. In the training
+data set we got a Recall of 86.13 % and in test data 85.47 %. Since the
+performnaces are similar in both training and testing we can conclude
+that there is no over fitting in the model. Using this tuned model we
+can predict the defaulters with 85.47 % of recall which is much better
+than the base model which only had 38% recall.</p>
+<figure>
+<img src="roc_auc.png" id="fig:roc_auc" alt="ROC AUC curve" />
+<figcaption aria-hidden="true">ROC AUC curve</figcaption>
+</figure>
+<figure>
+<img src="lg2_train_perf.png" id="fig:lg2_train_perf"
+alt="Performance on training set." />
+<figcaption aria-hidden="true">Performance on training set.</figcaption>
+</figure>
+<figure>
+<img src="lg2_test_perf.png" id="fig:lg2_test_per"
+alt="Performance on test set." />
+<figcaption aria-hidden="true">Performance on test set.</figcaption>
+</figure>
+<figure>
+<img src="lg2_c_Matrix_train.png" id="fig:lg2_c_Matrix_train"
+alt="Confusion matrix on training set." />
+<figcaption aria-hidden="true">Confusion matrix on training
+set.</figcaption>
+</figure>
+<figure>
+<img src="lg2_c_Matrix_test.png" id="fig: lg2_c_Matrix_test"
+alt="Confusion matrix on test set." />
+<figcaption aria-hidden="true">Confusion matrix on test
+set.</figcaption>
+</figure>
+<h2 id="k-nearest-neighbor">K-Nearest Neighbor</h2>
+<p>The k-nearest neighbors (k-NN) algorithm is a simple yet powerful
+non-parametric method used for both classification and regression tasks
+in machine learning. It operates on the principle of proximity, where
+the classification or prediction for a given data point is determined by
+the ‘k’ closest training examples in the feature space.</p>
+<figure>
+<img src="knn3_train_perf.png" id="fig:knn3_train_perf"
+alt="Performance on training set." />
+<figcaption aria-hidden="true">Performance on training set.</figcaption>
+</figure>
+<figure>
+<img src="knn3_test_perf.png" id="fig:knn3_test_perf"
+alt="performance on test set." />
+<figcaption aria-hidden="true">performance on test set.</figcaption>
+</figure>
+<figure>
+<img src="Knn3_c_Matrix_train.png" id="fig:Knn3_c_Matrix_train"
+alt="Confusion matrix on training set." />
+<figcaption aria-hidden="true">Confusion matrix on training
+set.</figcaption>
+</figure>
+<figure>
+<img src="Knn3_c_Matrix_test.png" id="fig: Knn3_c_Matrix_test"
+alt="Confusion matrix on test set." />
+<figcaption aria-hidden="true">Confusion matrix on test
+set.</figcaption>
+</figure>
+<p>The optimum value of k=3 was found by recording the recall score for
+values of k from 2 to 20. Even though accuracy is quite good, knn model
+fails to provide us desired performance in terms of recall score.</p>
+<h2 id="naive-bayes">Naive Bayes</h2>
+<p>The Naive Bayes classifier is a simple machine learning algorithm
+used for classification tasks. It is based on Bayes’ Theorem, which
+describes the probability of an event based on prior knowledge of
+conditions related to the event. The “naive” aspect of the algorithm
+comes from its assumption that all features are independent of each
+other given the class label, which is rarely true in real-world
+scenarios but simplifies the computation significantly. We carried out
+the Naive Bayes model from sklearn library. Similar to knn model, Naive
+Bayes model, although good with accuracy gives poor performance in terms
+of recall score. The performance on training and test data set is shown
+in figure <a href="#fig:Model performance Naive Bayes Classifier."
+data-reference-type="ref"
+data-reference="fig:Model performance Naive Bayes Classifier.">[fig:Model
+performance Naive Bayes Classifier.]</a></p>
+<figure>
+<img src="nb_train_perf.png" id="fig:nb_train_perf" />
+</figure>
+<figure>
+<img src="nb_test_perf.png" id="fig:nb_test_perf" />
+</figure>
+<figure>
+<img src="nb_c_Matrix_train.png" id="fig:nb_c_Matrix_train"
+alt="Confusion matrix on training set." />
+<figcaption aria-hidden="true">Confusion matrix on training
+set.</figcaption>
+</figure>
+<figure>
+<img src="nb_c_Matrix_test.png" id="fig: nb_c_Matrix_test"
+alt="Confusion matrix on test set." />
+<figcaption aria-hidden="true">Confusion matrix on test
+set.</figcaption>
+</figure>
+<h2 id="decision-trees">Decision Trees</h2>
+<p>Decision tree classification is a powerful and intuitive machine
+learning technique used for both classification and regression tasks. It
+works by recursively splitting the dataset into subsets based on the
+value of input features, creating a tree-like model of decisions. Each
+internal node represents a decision point based on a feature, each
+branch represents the outcome of that decision, and each leaf node
+represents a class label or a continuous value. The algorithm uses
+criteria such as Gini impurity, entropy, or information gain to
+determine the best splits, aiming to create the most homogeneous
+branches possible. Decision trees are highly interpretable, as the
+resulting model can be visualized and easily understood, making them
+particularly useful for explaining predictions. We utilized pre-pruning
+techniques to enhance the performance of the Decision Tree model.
+Pre-pruning halted the growth of the decision tree at an earlier stage,
+preventing the model from becoming overly complex and reducing
+overfitting. This approach helped the model to generalize better and
+make more accurate predictions on unseen data.</p>
+<figure>
+<img src="dTree_base_train_perf.png" id="fig:dTree_base_train_perf" />
+</figure>
+<figure>
+<img src="dTree_base_test_perf.png" id="fig:Tree_base_test_per" />
+</figure>
+<figure>
+<img src="dTree_c_Matrix_train.png" id="fig:dTree_base_c_Matrix_trai" />
+</figure>
+<figure>
+<img src="dTree_c_Matrix_test.png" id="fig:dTree_base_c_Matrix_test" />
+</figure>
+<p>To further refine the model, we applied hyperparameter tuning using
+GridSearchCV. This involved systematically searching through a
+predefined grid of hyperparameter values and evaluating each combination
+through cross-validation. By doing so, we aimed to find the optimal
+parameters that maximize the performance metric, thus improving the
+model’s generalization and effectiveness. We explored various parameter
+combinations for the DecisionTreeClassifier from sklearn, including max
+depth, min samples split, max leaf nodes, and class weight. The goal was
+to identify the best configuration that delivers superior performance
+for our dataset.</p>
+<p>After conducting the GridSearchCV process, the ideal set of
+parameters for the DecisionTreeClassifier was determined as follows:</p>
+<figure>
+<img src="Tuned_dtree_classifier" id="fig:Tuned_dtree_classifiers"
+alt="Decision Tree classifier obtained from GridSearchCV (Pre-pruning)." />
+<figcaption aria-hidden="true">Decision Tree classifier obtained from
+GridSearchCV (Pre-pruning).</figcaption>
+</figure>
+<figure>
+<img src="dTree_train_perf.png" id="fig:dTree_train_perf" />
+</figure>
+<figure>
+<img src="dTree_test_perf.png" id="fig:Tree_test_per" />
+</figure>
+<figure>
+<img src="dTree_c_Matrix_train.png" id="fig:dTree_c_Matrix_trai" />
+</figure>
+<figure>
+<img src="dTree_c_Matrix_test.png" id="fig:dTree_c_Matrix_test" />
+</figure>
+<figure>
+<img src="dTree_vis.png" id="fig:dTree_vis"
+alt="Decision Tree visualization of the tuned model. (Pre-pruning)" />
+<figcaption aria-hidden="true">Decision Tree visualization of the tuned
+model. (Pre-pruning)</figcaption>
+</figure>
+<figure>
+<img src="_feat_importance.png" id="fig:feat_imp" style="height:9cm"
+alt="Importance of features as inferred from tuned decision tree model (pre-pruning)" />
+<figcaption aria-hidden="true">Importance of features as inferred from
+tuned decision tree model (pre-pruning)</figcaption>
+</figure>
+<p>The visualization for the tuned decision tree is shown in figure <a
+href="#fig:dTree_vis" data-reference-type="ref"
+data-reference="fig:dTree_vis">49</a>. It has a depth of 6. The feature
+importance is obtained from this tuned model which is shown in figure <a
+href="#fig:feat_imp" data-reference-type="ref"
+data-reference="fig:feat_imp">50</a>. Weight, speed of vehicle, age,
+configuration of seat belt and whether there was a frontal impact are
+most features in deciding survival chances from crash. Having a speed
+range of 55+ km/h generally associated more with mortality as we had
+observed during EDA. The weight of the vehicle involved in the accident
+which turns out to be most important factor has more mortality rate for
+accident when &lt; 90.5 as observed from the top node of decision tree.
+So, lighter vehicles are more prone to damages and fatal crashes and
+associated with higher mortality rate. This is also confirmed from the
+box plot with respect to weight. Similarly higher age associated more
+with mortality.</p>
+<h2 id="final-model-comparison">Final Model comparison</h2>
+<figure>
+<img src="training_perf_compare.png" id="fig:training_perf_copmpare"
+alt="Comparison of base and tuned model performance on training set." />
+<figcaption aria-hidden="true">Comparison of base and tuned model
+performance on training set.</figcaption>
+</figure>
+<figure>
+<img src="test_perf_copmpare.png" id="fig:test_perf_copmpare"
+alt="Comparison of base and tuned model performance on test set." />
+<figcaption aria-hidden="true">Comparison of base and tuned model
+performance on test set.</figcaption>
+</figure>
+<ul>
+<li><p>Logistic regression accuracy is quite good both on training and
+testing data set. This signifies good level of generalization. After
+tuning to find the optimal threshold it show good performance on recall
+as well.</p></li>
+<li><p>Naive bayes and KNN on the otherhand although perform good
+interms of accuracy in both training and testing, they failed to deliver
+good performance in terms of recall score.</p></li>
+<li><p>Complete Base decision tree severely over fits the training data
+giving perfect accuracy. But this over fitting is exposed in the
+performance on testing set which is significantly lower.</p></li>
+<li><p>Pre prunned decision tree performs much better with similar score
+on training and test data set. This shows good level of generalization.
+The recall score 0f 85.5 % is achieved in test set through grid search
+and cross validation.</p></li>
+</ul>
+<h1 id="actionable-insights-and-recommendations">Actionable insights and
+Recommendations</h1>
+<h2 id="actionable-insights">Actionable insights</h2>
+<ul>
+<li><p>The analysis reveals that vehicle weight is the most significant
+factor in determining survival chances in crashes. Lighter vehicles
+(weighing less than 90.5) are associated with a higher mortality rate.
+This insight suggests that enhancing the structural integrity of lighter
+vehicles could potentially reduce fatalities.</p></li>
+<li><p>Vehicles traveling at speeds greater than 55 km/h are more likely
+to be involved in fatal crashes. Implementing stricter speed regulations
+and promoting safe driving practices at high speeds can significantly
+enhance survival rates in accidents.</p></li>
+<li><p>Higher age is correlated with an increased mortality rate in
+crashes. This underscores the importance of targeted safety measures for
+older adults, such as advanced driver assistance systems and
+age-specific vehicle safety features.</p></li>
+<li><p>The configuration of seat belts and the occurrence of frontal
+impacts are critical factors influencing survival chances. Encouraging
+the use of proper seat belt configurations and enhancing frontal impact
+safety features in vehicles can improve overall crash
+survivability.</p></li>
+<li><p>The analysis shows a slight difference in fatalities between
+males and females, with males having slightly more fatalities. This
+could be attributed to factors such as driving behavior or exposure
+risk, suggesting the need for targeted safety interventions based on
+gender-specific risk factors.</p></li>
+<li><p>The distribution of fatalities based on the occupant’s role
+reveals that passengers are more prone to severe outcomes compared to
+drivers. This is likely due to the lack of high-efficiency airbags in
+passenger seats. Enhancing safety features for all occupants, including
+passengers, can reduce the vulnerability in crashes.</p></li>
+</ul>
+<h2 id="business-recommendations">Business Recommendations</h2>
+<ul>
+<li><p>Focus on innovative materials and structural design improvements
+for lighter vehicles. Private companies should be encouraged to Allocate
+a significant portion of the R and D budget to develop stronger, more
+resilient materials that can enhance the safety of lighter vehicles
+without significantly increasing their weight. Educate consumers about
+the enhanced safety features and structural improvements in lighter
+vehicles.</p></li>
+<li><p>Advocate for and implement stricter speed limits, especially in
+high-risk areas where crashes are more frequent. Collaborate with local
+authorities and law enforcement to ensure compliance and promote safe
+driving practices. Use technology such as speed cameras and dynamic
+speed signs to monitor and manage vehicle speeds effectively. Launch
+awareness campaigns and educational programs that highlight the risks
+associated with driving at speeds greater than 55 km/h. Provide
+resources and training for drivers to adopt safer driving habits,
+focusing on speed management and defensive driving techniques.</p></li>
+<li><p>Develop and implement advanced driver assistance systems (ADAS)
+tailored to the needs of older drivers. These could include features
+like lane departure warnings, automatic emergency braking, and adaptive
+cruise control. Additionally, design and promote vehicle safety features
+that cater specifically to older adults, such as adjustable seat belts
+and ergonomic controls.</p></li>
+<li><p>Establish a system for continuous monitoring of crash data and
+effectiveness of speed regulations and safety measures. Use this data to
+make informed decisions and implement necessary improvements.</p></li>
+<li><p>Launch comprehensive awareness campaigns focusing on the
+importance of using seat belts properly. Provide clear instructions and
+demonstrations on the correct seat belt usage. Collaborate with
+automotive manufacturers to include reminders and alerts for proper seat
+belt configurations in vehicles.</p></li>
+</ul>
+<section id="end-of-report-submitted-by-haraprasad-dhal"
+class="unnumbered centering">
+<h2 class="unnumbered">End of Report<br />
+Submitted by : Haraprasad Dhal</h2>
+</section>
+</body>
+</html>

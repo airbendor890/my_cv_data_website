@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {1}Business context}{2}{section.1}%
+\contentsline {section}{\numberline {2}Exploratory data analysis}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Data set description}{2}{subsection.2.1}%
+\contentsline {section}{\numberline {3}DataPreprocessing}{6}{section.3}%
+\contentsline {section}{\numberline {4}Analysis with ML Models}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Logistic Regression}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}K-Nearest Neighbor}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Naive Bayes}{9}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Decision Trees}{11}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Final Model comparison}{14}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Actionable insights and Recommendations}{14}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Actionable insights}{14}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Business Recommendations}{15}{subsection.5.2}%
